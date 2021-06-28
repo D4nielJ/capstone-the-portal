@@ -1,0 +1,19 @@
+@use '../abstracts/' as *;
+
+.guests {
+  padding: $s-xxl-em $s-xl;
+  background: $light-color;
+  color: $secondary-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__list {
+    padding: 0;
+    list-style: none;
+  }
+
+  &__title {
+    margin-bottom: $s-md-em;
+  }
+}

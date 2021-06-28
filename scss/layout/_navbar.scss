@@ -1,7 +1,7 @@
 @use '../abstracts/' as *;
 
 .navbar {
-  padding: 1.5em $padx;
+  padding: $s-lg-em $s-xl;
   position: fixed;
   top: 0;
   left: 0;

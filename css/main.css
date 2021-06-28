@@ -93,7 +93,7 @@ body {
 }
 
 .navbar {
-  padding: 1.5em 2rem;
+  padding: 1.414em 1.999rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -101,8 +101,8 @@ body {
 }
 
 .home {
-  min-height: 70vh;
-  padding: 7em 2rem;
+  min-height: 90vh;
+  padding: 5.653em 1.999rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -126,8 +126,8 @@ body {
   font-size: 2.2rem;
   font-weight: normal;
   color: #272a31;
-  line-height: 2rem;
-  margin-bottom: 2rem;
+  line-height: 1.999rem;
+  margin-bottom: 1.999rem;
 }
 .home__title h1 {
   background: url(../../assets/img/forest-2.jpg) 50% 50% no-repeat;
@@ -138,45 +138,102 @@ body {
   font-weight: 900;
   color: transparent;
   line-height: 4rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.999rem;
 }
 .home__desc {
   font-family: "lato", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.414rem;
   font-weight: normal;
   color: #272a31;
-  line-height: 2rem;
+  line-height: 1.999rem;
   border: #fff 0.3rem solid;
-  padding: 1em 2rem;
+  padding: 1em 1.999rem;
   background: #f7f7f7;
-  margin-bottom: 2rem;
+  margin-bottom: 1.999rem;
 }
 .home__date {
   font-family: "cocogoose", "lato", sans-serif;
   font-size: 2.2rem;
   font-weight: normal;
   color: #272a31;
-  line-height: 2rem;
+  line-height: 1.999rem;
   margin-bottom: 1rem;
 }
 .home__location {
   font-family: "lato", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.414rem;
   font-weight: normal;
   color: #272a31;
-  line-height: 2rem;
+  line-height: 1.999rem;
 }
 
 .activities {
-  padding: 0 2rem;
+  padding: 2.827em 1.999rem;
   background: #272a31;
   color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+.activities__list {
+  padding: 0;
+}
 .activities__title {
-  padding: 2rem 0 1rem 0;
+  margin-bottom: 1em;
+}
+.activities__card {
+  width: 100%;
+  margin: 1rem 0;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 1em 1.999rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.activities__card--last {
+  margin-bottom: 1.999em;
+}
+.activities__icon {
+  display: block;
+  font-size: 1.999rem;
+  color: #f7f7f7;
+  margin-right: 1rem;
+}
+.activities__subtitle {
+  flex: 1 0 50%;
+  display: flex;
+  align-items: center;
+  font-family: "lato", sans-serif;
+  font-size: 1.414rem;
+  font-weight: 800;
+  color: #1bc54b;
+  line-height: 1.999rem;
+  margin-right: 0.5rem;
+  text-align: left;
+}
+.activities p {
+  font-family: "lato", sans-serif;
+  font-size: 1.414rem;
+  font-weight: normal;
+  color: #fff;
+  line-height: 1.999rem;
+  flex: 1 0 50%;
+}
+
+.guests {
+  padding: 2.827em 1.999rem;
+  background: #fff;
+  color: #272a31;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.guests__list {
+  padding: 0;
+  list-style: none;
+}
+.guests__title {
+  margin-bottom: 1em;
 }
 
 .toogler {
@@ -197,8 +254,29 @@ body {
 
 .titles-decor {
   width: 4rem;
-  height: 0.1rem;
-  background: #1BC54B;
+  height: 0.2rem;
+  background: #1bc54b;
+  margin-bottom: 1em;
+}
+
+.button {
+  text-decoration: none;
+  padding: 1.414em 2.827rem;
+  font-family: "lato", sans-serif;
+  font-size: 1.999rem;
+  font-weight: normal;
+  color: #fff;
+  line-height: 1.999rem;
+}
+
+.button-orange {
+  background: #1bc54b;
+}
+.button-orange:hover {
+  background: #0a481c;
+}
+.button-orange:active {
+  background: #073615;
 }
 
 /*# sourceMappingURL=main.css.map */

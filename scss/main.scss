@@ -10,12 +10,12 @@
 @use 'layout/navbar';
 @use 'layout/home';
 @use 'layout/activities';
-
+@use 'layout/guests';
 
 // Components
 @use 'components/toogler';
 @use 'components/decor';
-
+@use 'components/buttons';
 
 // Pages
 

@@ -1,8 +1,8 @@
 @use '../abstracts/' as *;
 
 .home {
-  min-height: 70vh;
-  padding: 7em $padx;
+  min-height: 90vh;
+  padding: $s-llg-em $s-xl;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,7 +10,7 @@
   background-size: cover;
   position: relative;
   z-index: -1;
-  
+
   &__title-bg {
     top: 0;
     left: 0;
@@ -23,32 +23,36 @@
   }
 
   &__title {
-
     & h2 {
       @include font-styler ($lato, 2.2rem);
-      margin-bottom: $mary;
+
+      margin-bottom: $s-xl;
     }
 
     & h1 {
       background: url(../../assets/img/forest-2.jpg) 50% 50% no-repeat;
       background-size: cover;
       background-clip: text;
+
       @include font-styler ($cocogoose, 3.5rem, 900, $line-height: 4rem, $color: transparent);
-      margin-bottom: $mary;
+
+      margin-bottom: $s-xl;
     }
   }
 
   &__desc {
     @include font-styler;
+
     border: $light-color 0.3rem solid;
-    padding: 1em $padx;
+    padding: 1em $s-xl;
     background: $accent-lighter-color;
-    margin-bottom: $mary;
+    margin-bottom: $s-xl;
   }
 
   &__date {
     @include font-styler ($cocogoose, 2.2rem, $color: $secondary-color);
-    margin-bottom: $mary/2;
+
+    margin-bottom: $s-md;
   }
 
   &__location {
