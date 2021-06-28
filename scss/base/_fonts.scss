@@ -2,12 +2,13 @@
 
 @font-face {
   font-family: "cocogoose";
-  src: url(../../assets/fonts/cocogoose/cocogoose.ttf) format(truetype);
+  src: url(../../assets/fonts/cocogoose/cocogoose-webfont.woff);
+  font-weight: 900;
 }
 
 @font-face {
   font-family: "cocogoose";
-  src: url(../../assets/fonts/cocogoose/cocogoose-Italic.ttf) format(truetype);
+  src: url(../../assets/fonts/cocogoose/cocogoose-Italic.ttf);
   font-style: italic;
 }
 

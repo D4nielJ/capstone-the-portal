@@ -1,0 +1,14 @@
+@use '../abstracts/' as *;
+
+.activities {
+  padding: 0 $padx;
+  background: $secondary-color;
+  color: $light-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    padding: $padx 0 $padx/2 0;
+  }
+}

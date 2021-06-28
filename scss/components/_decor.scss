@@ -1,0 +1,7 @@
+@use '../abstracts/' as *;
+
+.titles-decor {
+  width: 4rem;
+  height: 0.1rem;
+  background: $primary-color;
+}

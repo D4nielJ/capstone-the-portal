@@ -9,9 +9,13 @@
 // Layout
 @use 'layout/navbar';
 @use 'layout/home';
+@use 'layout/activities';
+
 
 // Components
 @use 'components/toogler';
+@use 'components/decor';
+
 
 // Pages
 

@@ -2,11 +2,11 @@
 
 .home {
   min-height: 70vh;
-  padding: 10em $padx;
+  padding: 7em $padx;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: url(../../assets/img/forest-2.jpg) 50% 75% no-repeat;
+  background: url(../../assets/img/forest-2.jpg) 50% 50% no-repeat;
   background-size: cover;
   position: relative;
   z-index: -1;
@@ -16,7 +16,7 @@
     left: 0;
     position: absolute;
     content: '';
-    background-color: rgba(#fff, 0.8);
+    background-color: rgba($light-color, 0.85);
     min-height: 100%;
     width: 100%;
     z-index: -1;
@@ -39,9 +39,19 @@
   }
 
   &__desc {
-    @include font-styler ($lato, 1.6rem, $color: $secondary-color);
-    border: #fff 0.3rem solid;
-    padding: 0.5em $padx;
-    background: $accent-color;
+    @include font-styler;
+    border: $light-color 0.3rem solid;
+    padding: 1em $padx;
+    background: $accent-lighter-color;
+    margin-bottom: $mary;
+  }
+
+  &__date {
+    @include font-styler ($cocogoose, 2.2rem, $color: $secondary-color);
+    margin-bottom: $mary/2;
+  }
+
+  &__location {
+    @include font-styler;
   }
 }

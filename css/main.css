@@ -75,11 +75,12 @@ select {
 }
 @font-face {
   font-family: "cocogoose";
-  src: url(../../assets/fonts/cocogoose/cocogoose.ttf) format(truetype);
+  src: url(../../assets/fonts/cocogoose/cocogoose-webfont.woff);
+  font-weight: 900;
 }
 @font-face {
   font-family: "cocogoose";
-  src: url(../../assets/fonts/cocogoose/cocogoose-Italic.ttf) format(truetype);
+  src: url(../../assets/fonts/cocogoose/cocogoose-Italic.ttf);
   font-style: italic;
 }
 html {
@@ -101,11 +102,11 @@ body {
 
 .home {
   min-height: 70vh;
-  padding: 10em 2rem;
+  padding: 7em 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: url(../../assets/img/forest-2.jpg) 50% 75% no-repeat;
+  background: url(../../assets/img/forest-2.jpg) 50% 50% no-repeat;
   background-size: cover;
   position: relative;
   z-index: -1;
@@ -115,7 +116,7 @@ body {
   left: 0;
   position: absolute;
   content: "";
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.85);
   min-height: 100%;
   width: 100%;
   z-index: -1;
@@ -124,7 +125,7 @@ body {
   font-family: "lato", sans-serif;
   font-size: 2.2rem;
   font-weight: normal;
-  color: #0A481C;
+  color: #272a31;
   line-height: 2rem;
   margin-bottom: 2rem;
 }
@@ -146,12 +147,42 @@ body {
   color: #272a31;
   line-height: 2rem;
   border: #fff 0.3rem solid;
-  padding: 0.5em 2rem;
-  background: #d3d3d3;
+  padding: 1em 2rem;
+  background: #f7f7f7;
+  margin-bottom: 2rem;
+}
+.home__date {
+  font-family: "cocogoose", "lato", sans-serif;
+  font-size: 2.2rem;
+  font-weight: normal;
+  color: #272a31;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+.home__location {
+  font-family: "lato", sans-serif;
+  font-size: 1.6rem;
+  font-weight: normal;
+  color: #272a31;
+  line-height: 2rem;
+}
+
+.activities {
+  padding: 0 2rem;
+  background: #272a31;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.activities__title {
+  padding: 2rem 0 1rem 0;
 }
 
 .toogler {
   cursor: pointer;
+  display: inline-block;
+  padding: 1rem;
 }
 .toogler__line {
   display: block;
@@ -162,6 +193,12 @@ body {
 }
 .toogler__line:last-child {
   margin-bottom: 0;
+}
+
+.titles-decor {
+  width: 4rem;
+  height: 0.1rem;
+  background: #1BC54B;
 }
 
 /*# sourceMappingURL=main.css.map */
