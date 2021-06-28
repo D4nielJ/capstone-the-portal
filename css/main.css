@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 /* Box sizing rules */
 *,
 *::before,
@@ -71,6 +72,96 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+@font-face {
+  font-family: "cocogoose";
+  src: url(../../assets/fonts/cocogoose/cocogoose.ttf) format(truetype);
+}
+@font-face {
+  font-family: "cocogoose";
+  src: url(../../assets/fonts/cocogoose/cocogoose-Italic.ttf) format(truetype);
+  font-style: italic;
+}
+html {
+  font-size: 62.5%;
+  font-family: "lato", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.navbar {
+  padding: 1.5em 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.home {
+  min-height: 70vh;
+  padding: 10em 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: url(../../assets/img/forest-2.jpg) 50% 75% no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+}
+.home__title-bg {
+  top: 0;
+  left: 0;
+  position: absolute;
+  content: "";
+  background-color: rgba(255, 255, 255, 0.8);
+  min-height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.home__title h2 {
+  font-family: "lato", sans-serif;
+  font-size: 2.2rem;
+  font-weight: normal;
+  color: #0A481C;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+.home__title h1 {
+  background: url(../../assets/img/forest-2.jpg) 50% 50% no-repeat;
+  background-size: cover;
+  background-clip: text;
+  font-family: "cocogoose", "lato", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: transparent;
+  line-height: 4rem;
+  margin-bottom: 2rem;
+}
+.home__desc {
+  font-family: "lato", sans-serif;
+  font-size: 1.6rem;
+  font-weight: normal;
+  color: #272a31;
+  line-height: 2rem;
+  border: #fff 0.3rem solid;
+  padding: 0.5em 2rem;
+  background: #d3d3d3;
+}
+
+.toogler {
+  cursor: pointer;
+}
+.toogler__line {
+  display: block;
+  width: 2.8rem;
+  height: 0.3rem;
+  background: #272a31;
+  margin-bottom: 0.5rem;
+}
+.toogler__line:last-child {
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,25 @@
+@use '../abstracts/' as *;
+
+@font-face {
+  font-family: "cocogoose";
+  src: url(../../assets/fonts/cocogoose/cocogoose.ttf) format(truetype);
+}
+
+@font-face {
+  font-family: "cocogoose";
+  src: url(../../assets/fonts/cocogoose/cocogoose-Italic.ttf) format(truetype);
+  font-style: italic;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+// base font-size
+
+html {
+  font-size: 62.5%;
+  font-family: $lato;
+}
+
+body {
+  font-size: 1.6rem;
+}

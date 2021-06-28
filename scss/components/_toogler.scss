@@ -1,0 +1,17 @@
+@use '../abstracts/' as *;
+
+.toogler {
+  cursor: pointer;
+  
+  &__line {
+    display: block;
+    width: 2.8rem;
+    height: 0.3rem;
+    background: $secondary-color;
+    margin-bottom: 0.5rem;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

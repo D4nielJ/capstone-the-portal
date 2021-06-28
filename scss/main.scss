@@ -1,13 +1,17 @@
 @charset 'utf-8';
 
 // Vendors
-  @use 'vendors/reset';
+@use 'vendors/reset';
 
 // Base
+@use 'base';
 
 // Layout
+@use 'layout/navbar';
+@use 'layout/home';
 
 // Components
+@use 'components/toogler';
 
 // Pages
 
