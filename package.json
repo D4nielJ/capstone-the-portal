@@ -1,0 +1,23 @@
+{
+  "name": "capstone-the-portal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "wsass": "sass --watch scss:css",
+    "llh": "lighthouse http://127.0.0.1:5500/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/D4nielJ/capstone-the-portal.git"
+  },
+  "author": "Daniel Jaramillo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/D4nielJ/capstone-the-portal/issues"
+  },
+  "homepage": "https://github.com/D4nielJ/capstone-the-portal#readme",
+  "devDependencies": {
+    "sass": "^1.35.1"
+  }
+}
