@@ -8,12 +8,53 @@
   flex-direction: column;
   align-items: center;
 
-  &__list {
-    padding: 0;
-    list-style: none;
-  }
-
   &__title {
     margin-bottom: $s-md-em;
+  }
+
+  &__card {
+    display: flex;
+    align-items: center;
+    margin-bottom: $s-xxl;
+  }
+
+  &__img-container{
+    min-width: 12rem;
+    min-height: 12rem;
+    position: relative;
+    margin-right: $s-xl;
+  }
+
+  &__decor-img {
+    display: block;
+    width: 55%;
+    height: 55%;
+    background: $primary-color;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__img {
+    position: absolute;
+    z-index: 2;
+    width: 87%;
+    right: 0;
+    bottom: 0;
+  }
+
+  &__name {
+    @include font-styler($color: $secondary-color, $weight: 700, $size: $s-xl);
+    margin-bottom: $s-xs-em;
+  }
+  
+  &__role {
+    @include font-styler($color: $primary-color, $weight: 500);
+    font-style: italic;
+    margin-bottom: $s-sm-em;
+  }
+
+  &__desc {
+    @include font-styler($size: $s-md, $line-height: $s-lg);
   }
 }

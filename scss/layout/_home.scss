@@ -24,7 +24,7 @@
 
   &__title {
     & h2 {
-      @include font-styler ($lato, 2.2rem);
+      @include font-styler ($lato, 2.2rem, $color: $primary-color);
 
       margin-bottom: $s-xl;
     }
@@ -33,9 +33,7 @@
       background: url(../../assets/img/forest-2.jpg) 50% 50% no-repeat;
       background-size: cover;
       background-clip: text;
-
       @include font-styler ($cocogoose, 3.5rem, 900, $line-height: 4rem, $color: transparent);
-
       margin-bottom: $s-xl;
     }
   }

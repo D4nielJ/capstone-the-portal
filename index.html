@@ -34,12 +34,12 @@
     <!-- A C T I V I T I E S -->
     <section id="activities" class="activities">
       <h2 class="activities__title">Activities</h2>
-      <span class="titles-decor"></span>
+      <span class="title-decor"></span>
       
-      <ul class="activities__list">
+      <ul class="activities__list" role="list">
         <li class="activities__card">        
           <h3 class="activities__subtitle">
-            <i class="activities__icon fas fa-campground"></i>
+            <i class="activities__icon fas fa-campground fa-fw"></i>
             Camping
           </h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, harum.</p>
@@ -47,7 +47,7 @@
 
         <li class="activities__card">        
           <h3 class="activities__subtitle">
-            <i class="activities__icon fas fa-campground"></i>
+            <i class="activities__icon fas fa-hiking fa-fw"></i>
             Hiking
           </h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, harum.</p>
@@ -55,7 +55,7 @@
 
         <li class="activities__card">
           <h3 class="activities__subtitle">
-            <i class="activities__icon fas fa-campground"></i>
+            <i class="activities__icon fas fa-meteor fa-fw"></i>
             Star Gazing
           </h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, harum.</p>
@@ -63,7 +63,7 @@
 
         <li class="activities__card">
           <h3 class="activities__subtitle">
-            <i class="activities__icon fas fa-campground"></i>
+            <i class="activities__icon fas fa-crow fa-fw"></i>
             Wildlife Photography
           </h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, harum.</p>
@@ -71,38 +71,53 @@
 
         <li class="activities__card activities__card--last">
           <h3 class="activities__subtitle">
-            <i class="activities__icon fas fa-campground"></i>
+            <i class="activities__icon fas fa-fire-alt fa-fw"></i>
             Mastering Techniques
           </h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, harum.</p>
         </li>        
-      </ul>
-      
+      </ul>      
 
       <a href="#" class="button button-orange">Join SC Global Summit 2022</a>
     </section>
     <!-- S P E A K E R S -->
     <section id="guests" class="guests">
       <h2 class="guests__title">Featured Guests</h2>
-      <span class="titles-decor"></span>
+      <span class="title-decor"></span>
 
-      <ul class="guests__list">
+      <ul class="guests__list" role="list">
         <li class="guests__card">
           <div class="guests__img-container">
-            <span class="decor-img"></span>
-            <img src="" alt="" class="guests__img">
+            <span class="guests__decor-img"></span>
+            <img src="./assets/img/guests/guest-1.webp" alt="" class="guests__img">
           </div>
           <div class="guests__info">
             <hgroup>
               <h3 class="guests__name">Yochai Benkler</h3>
               <h4 class="guests__role">Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School</h4>
             </hgroup>
-            <span class="titles-decor--small"></span>
-            <p class="guests__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo alias qui nisi ullam soluta dicta iste eveniet recusandae culpa voluptatem.</p>
+            <span class="title-decor title-decor--small"></span>
+            <p class="guests__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, animi.</p>
+          </div>
+        </li>
+      
+        <li class="guests__card">
+          <div class="guests__img-container">
+            <span class="guests__decor-img"></span>
+            <img src="./assets/img/guests/guest-1.webp" alt="" class="guests__img">
+          </div>
+          <div class="guests__info">
+            <hgroup>
+              <h3 class="guests__name">Yochai Benkler</h3>
+              <h4 class="guests__role">Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School</h4>
+            </hgroup>
+            <span class="title-decor title-decor--small"></span>
+            <p class="guests__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, animi.</p>
           </div>
         </li>
       </ul>
 
+      <button type="button" class="accordion guests__accordion">MORE<span class="fas fa-chevron-down"></span></button>
     </section>
   </main>
 </body>

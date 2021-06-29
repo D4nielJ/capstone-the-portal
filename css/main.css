@@ -24,6 +24,8 @@ dd {
 ul[role=list],
 ol[role=list] {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* Set core root defaults */
@@ -125,7 +127,7 @@ body {
   font-family: "lato", sans-serif;
   font-size: 2.2rem;
   font-weight: normal;
-  color: #272a31;
+  color: #1bc54b;
   line-height: 1.999rem;
   margin-bottom: 1.999rem;
 }
@@ -175,9 +177,6 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.activities__list {
-  padding: 0;
-}
 .activities__title {
   margin-bottom: 1em;
 }
@@ -185,7 +184,7 @@ body {
   width: 100%;
   margin: 1rem 0;
   background: rgba(255, 255, 255, 0.2);
-  padding: 1em 1.999rem;
+  padding: 1em 1.414rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -195,7 +194,7 @@ body {
 }
 .activities__icon {
   display: block;
-  font-size: 1.999rem;
+  font-size: 2.827rem;
   color: #f7f7f7;
   margin-right: 1rem;
 }
@@ -228,12 +227,59 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.guests__list {
-  padding: 0;
-  list-style: none;
-}
 .guests__title {
   margin-bottom: 1em;
+}
+.guests__card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.827rem;
+}
+.guests__img-container {
+  min-width: 12rem;
+  min-height: 12rem;
+  position: relative;
+  margin-right: 1.999rem;
+}
+.guests__decor-img {
+  display: block;
+  width: 55%;
+  height: 55%;
+  background: #1bc54b;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.guests__img {
+  position: absolute;
+  z-index: 2;
+  width: 87%;
+  right: 0;
+  bottom: 0;
+}
+.guests__name {
+  font-family: "lato", sans-serif;
+  font-size: 1.999rem;
+  font-weight: 700;
+  color: #272a31;
+  line-height: 1.999rem;
+  margin-bottom: 0.5em;
+}
+.guests__role {
+  font-family: "lato", sans-serif;
+  font-size: 1.414rem;
+  font-weight: 500;
+  color: #1bc54b;
+  line-height: 1.999rem;
+  font-style: italic;
+  margin-bottom: 0.707em;
+}
+.guests__desc {
+  font-family: "lato", sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  color: #272a31;
+  line-height: 1.414rem;
 }
 
 .toogler {
@@ -252,11 +298,18 @@ body {
   margin-bottom: 0;
 }
 
-.titles-decor {
+.title-decor {
+  display: block;
   width: 4rem;
   height: 0.2rem;
   background: #1bc54b;
   margin-bottom: 1em;
+}
+
+.title-decor--small {
+  width: 3rem;
+  background: #d3d3d3;
+  margin-bottom: 0.707em;
 }
 
 .button {
@@ -277,6 +330,24 @@ body {
 }
 .button-orange:active {
   background: #073615;
+}
+
+.accordion {
+  cursor: pointer;
+  width: 100%;
+  background: #fff;
+  border: #d3d3d3 1px solid;
+  padding: 1rem 0;
+  border-radius: 0.4rem;
+  font-family: "lato", sans-serif;
+  font-size: 1.414rem;
+  font-weight: normal;
+  color: #272a31;
+  line-height: 1.999rem;
+}
+.accordion .fas {
+  margin-left: 1rem;
+  color: #1bc54b;
 }
 
 /*# sourceMappingURL=main.css.map */
