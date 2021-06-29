@@ -18,7 +18,7 @@
     margin-bottom: $s-xxl;
   }
 
-  &__img-container{
+  &__img-container {
     min-width: 12rem;
     min-height: 12rem;
     position: relative;
@@ -45,11 +45,13 @@
 
   &__name {
     @include font-styler($color: $secondary-color, $weight: 700, $size: $s-xl);
+
     margin-bottom: $s-xs-em;
   }
-  
+
   &__role {
     @include font-styler($color: $primary-color, $weight: 500);
+
     font-style: italic;
     margin-bottom: $s-sm-em;
   }

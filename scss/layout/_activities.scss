@@ -37,13 +37,16 @@
     flex: 1 0 50%;
     display: flex;
     align-items: center;
+
     @include font-styler($size: $s-lg, $color: $primary-color, $weight: 800);
+
     margin-right: $s-xs;
     text-align: left;
   }
 
   & p {
     @include font-styler($color: $light-color, $size: $s-lg);
+
     flex: 1 0 50%;
   }
 }

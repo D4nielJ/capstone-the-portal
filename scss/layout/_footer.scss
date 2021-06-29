@@ -16,6 +16,7 @@
 
   &__desc {
     @include font-styler ($size: $s-md, $line-height: $s-lg);
+
     flex: 0 0 46%;
   }
 }

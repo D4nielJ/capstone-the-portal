@@ -190,11 +190,12 @@ body {
 .home__title h1 {
   background: url(../../assets/img/green-bg.jpg) 50% 50% no-repeat;
   background-size: cover;
-  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
   font-family: "cocogoose", "lato", sans-serif;
   font-size: 3.5rem;
   font-weight: 900;
-  color: transparent;
+  color: #1bc54b;
   line-height: 4rem;
   margin-bottom: 1.999rem;
 }

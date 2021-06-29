@@ -32,8 +32,11 @@
     & h1 {
       background: url(../../assets/img/green-bg.jpg) 50% 50% no-repeat;
       background-size: cover;
-      background-clip: text;
-      @include font-styler ($cocogoose, 3.5rem, 900, $line-height: 4rem, $color: transparent);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+
+      @include font-styler ($cocogoose, 3.5rem, 900, $line-height: 4rem, $color: $primary-color);
+
       margin-bottom: $s-xl;
     }
   }
