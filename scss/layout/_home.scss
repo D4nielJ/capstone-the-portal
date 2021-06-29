@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: url(../../assets/img/forest-2.jpg) 50% 50% no-repeat;
+  background: url(../../assets/img/yosemite-1.jpg) 50% 75% no-repeat;
   background-size: cover;
   position: relative;
   z-index: -1;
@@ -16,7 +16,7 @@
     left: 0;
     position: absolute;
     content: '';
-    background-color: rgba($light-color, 0.85);
+    background-color: rgba($light-color, 0.8);
     min-height: 100%;
     width: 100%;
     z-index: -1;
@@ -30,7 +30,7 @@
     }
 
     & h1 {
-      background: url(../../assets/img/forest-2.jpg) 50% 50% no-repeat;
+      background: url(../../assets/img/green-bg.jpg) 50% 50% no-repeat;
       background-size: cover;
       background-clip: text;
       @include font-styler ($cocogoose, 3.5rem, 900, $line-height: 4rem, $color: transparent);
