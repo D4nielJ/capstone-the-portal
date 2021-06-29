@@ -111,7 +111,7 @@ body {
   transition: padding 200ms ease-in-out, background-color 200ms ease-in-out;
 }
 .navbar--scrolled {
-  background-color: rgba(39, 42, 49, 0.7);
+  background-color: #272a31;
   padding: 1.414em 1.999rem;
 }
 .navbar__toggler-container {
