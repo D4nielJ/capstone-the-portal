@@ -32,9 +32,7 @@
 
   &__item {
     padding: $s-md-em $s-lg;
-
     @include font-styler($size: $s-xl, $color: $primary-color-2d);
-
     cursor: pointer;
 
     &:hover {

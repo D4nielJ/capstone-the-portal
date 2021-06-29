@@ -164,7 +164,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: url(../../assets/img/yosemite-1.jpg) 50% 75% no-repeat;
+  background: url(../assets/img/yosemite-1.jpg) 50% 75% no-repeat;
   background-size: cover;
   position: relative;
   z-index: -1;
@@ -188,7 +188,7 @@ body {
   margin-bottom: 1.999rem;
 }
 .home__title h1 {
-  background: url(../../assets/img/green-bg.jpg) 50% 50% no-repeat;
+  background: url(../assets/img/green-bg.jpg) 50% 50% no-repeat;
   background-size: cover;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;

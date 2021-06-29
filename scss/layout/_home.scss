@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: url(../../assets/img/yosemite-1.jpg) 50% 75% no-repeat;
+  background: url(../assets/img/yosemite-1.jpg) 50% 75% no-repeat;
   background-size: cover;
   position: relative;
   z-index: -1;
@@ -25,25 +25,21 @@
   &__title {
     & h2 {
       @include font-styler ($lato, 2.2rem, $color: $primary-color);
-
       margin-bottom: $s-xl;
     }
 
     & h1 {
-      background: url(../../assets/img/green-bg.jpg) 50% 50% no-repeat;
+      background: url(../assets/img/green-bg.jpg) 50% 50% no-repeat;
       background-size: cover;
       -webkit-text-fill-color: transparent;
       -webkit-background-clip: text;
-
       @include font-styler ($cocogoose, 3.5rem, 900, $line-height: 4rem, $color: $primary-color);
-
       margin-bottom: $s-xl;
     }
   }
 
   &__desc {
     @include font-styler;
-
     border: $light-color 0.3rem solid;
     padding: 1em $s-xl;
     background: $accent-lighter-color;
@@ -52,7 +48,6 @@
 
   &__date {
     @include font-styler ($cocogoose, 2.2rem, $color: $secondary-color);
-
     margin-bottom: $s-md;
   }
 
