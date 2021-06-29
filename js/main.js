@@ -24,3 +24,24 @@ const closeMenu = () => {
 
 navbarToggler.addEventListener('click', toggleMenu);
 navbarItemActive.addEventListener('click', closeMenu);
+
+// Event for Scrolling
+
+let scrolling = false;
+
+window.addEventListener('scroll', () => {
+  scrolling = true;
+})
+
+setInterval(() => {
+    if (scrolling) {
+        scrolling = false;
+        if (window.scrollY === 0) {
+          navbar.classList.remove('navbar--scrolled');
+          navbarTogglerIcon.classList.remove('toggler--scrolled');
+        } else {
+          navbar.classList.add('navbar--scrolled');
+          navbarTogglerIcon.classList.add('toggler--scrolled');
+        }
+    }
+}, 300);

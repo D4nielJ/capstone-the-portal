@@ -102,15 +102,24 @@ body {
 
 .navbar {
   z-index: 3;
-  padding: 1.414em 1.999rem;
+  padding: 1.999em 1.999rem;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  transition: padding 200ms ease-in-out, background-color 200ms ease-in-out;
+}
+.navbar--scrolled {
+  background-color: rgba(39, 42, 49, 0.7);
+  padding: 1.414em 1.999rem;
 }
 .navbar__toggler-container {
   position: fixed;
-  display: inline-block;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   min-height: 1.9rem;
   z-index: inherit;
@@ -415,7 +424,7 @@ body {
   width: 100%;
   height: 0.3rem;
   background: #272a31;
-  top: 0.8rem;
+  top: -0.8rem;
   opacity: 1;
   transition: opacity 200ms ease-in-out;
 }
@@ -425,18 +434,29 @@ body {
   position: absolute;
   width: 2.8rem;
   height: 0.3rem;
-  background: #272a31;
-  top: 1.6rem;
-  transition: transform 200ms ease-in-out, top 200ms ease-in-out;
+  background-color: #272a31;
+  top: 0.8rem;
+  transition: transform 200ms ease-in-out, background-color 200ms ease-in-out, top 200ms ease-in-out;
+}
+.toggler--scrolled {
+  background-color: #fff;
+}
+.toggler--scrolled::after {
+  background-color: #fff;
+}
+.toggler--scrolled::before {
+  background-color: #fff;
 }
 .toggler--active {
+  background-color: #272a31;
   transform: rotate(135deg);
-  top: 1rem;
 }
 .toggler--active::after {
+  background-color: #272a31;
   opacity: 0;
 }
 .toggler--active::before {
+  background-color: #272a31;
   transform: rotate(90deg);
   top: 0rem;
 }

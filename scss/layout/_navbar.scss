@@ -6,15 +6,28 @@
 
 .navbar {
   z-index: 3;
-  padding: $s-lg-em $s-xl;
+  padding: $s-xl-em $s-xl;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  transition:
+    padding $speed1 ease-in-out,
+    background-color $speed1 ease-in-out,
+  ;
+
+  &--scrolled {
+    background-color: rgba($secondary-color, 0.7);
+    padding: $s-lg-em $s-xl;
+  }
 
   &__toggler-container {
     position: fixed;
-    display: inline-block;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;    
     min-height: (0.3*3+0.5*2rem);
     z-index: inherit;
