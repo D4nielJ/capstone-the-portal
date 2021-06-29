@@ -24,4 +24,9 @@
     flex: 0 0 33.333%;
     padding: 0 $s-sm-em;
   }
+
+  &__img {
+    max-height: 6.5rem;
+    margin: 0 auto;
+  }
 }

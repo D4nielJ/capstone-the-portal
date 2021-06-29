@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   background: $accent-lighter-color;
   position: relative;
   z-index: -1;
@@ -49,5 +50,113 @@
   &__location {
     @include font-styler;
     text-align: center;
+  }
+}
+
+.logo-info {
+  padding: $s-xxl-em $s-xl;
+  background: $light-color;
+  color: $secondary-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: rgba($secondary-color, 0.2) 1px solid;
+  border-bottom: rgba($secondary-color, 0.2) 1px solid;
+
+  &__title {
+    margin-bottom: $s-xxs-em;
+    text-align: center;
+  }
+
+  & p {
+    @include font-styler($color: $dark-color);
+    flex: 1 0 50%;
+    text-align: center;
+    margin-bottom: $s-lg-em;
+  }
+
+  &__logo-container {
+    width: 100%;
+    padding: $s-xl $s-xxl;
+    border: rgba($secondary-color, 0.2) 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__logo {
+    position: relative;
+    top: 0.3rem;
+    right: 0.3rem;
+  }
+}
+
+.past {
+  padding: $s-xxl-em $s-xl;
+  background: $light-color;
+  color: $secondary-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    margin-bottom: $s-xxs-em;
+    text-align: center;
+  }
+
+  &__desc {
+    @include font-styler($color: $dark-color);
+    flex: 1 0 50%;
+    text-align: center;
+    margin-bottom: $s-lg-em;
+  }
+
+  &__events-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    row-gap: $s-lg-em;
+  }
+
+  &__events {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: $primary-color url(../assets/img/yosemite-1.jpg) 50% 75% no-repeat;
+    background-size: 100%;
+    padding: $s-xxxl-em $s-md;
+    width: 100%;
+    text-decoration: none;
+    position: relative;
+    transition: background-size $speed1 ease-in-out;
+
+    &:hover,
+    &:active {
+      background-size: 107%;      
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba($primary-color, 0.6);
+    }
+  }
+
+  &__year {
+    @include font-styler($color: $light-color, $size: $s-xxl, $weight: 700);
+    margin-bottom: $s-xs-em;
+    z-index: 2;
+  }
+
+  &__event-desc {
+    @include font-styler($color: $light-color, $weight: 700);
+    z-index: 2;
   }
 }

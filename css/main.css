@@ -154,6 +154,7 @@ body {
   font-weight: 400;
   color: #073615;
   line-height: 1.999rem;
+  max-width: 60ch;
   cursor: pointer;
 }
 .navbar__item:hover {
@@ -209,6 +210,7 @@ body {
   font-weight: 400;
   color: #1bc54b;
   line-height: 1.999rem;
+  max-width: 60ch;
   margin-bottom: 1.999rem;
 }
 .home__title h1 {
@@ -221,6 +223,7 @@ body {
   font-weight: 900;
   color: #1bc54b;
   line-height: 4rem;
+  max-width: 60ch;
   margin-bottom: 1.999rem;
 }
 .home__desc {
@@ -229,6 +232,7 @@ body {
   font-weight: 400;
   color: #272a31;
   line-height: 1.999rem;
+  max-width: 60ch;
   border: #fff 0.3rem solid;
   padding: 1em 1.999rem;
   background: #f7f7f7;
@@ -240,6 +244,7 @@ body {
   font-weight: 400;
   color: #272a31;
   line-height: 1.999rem;
+  max-width: 60ch;
   margin-bottom: 1rem;
 }
 .home__location {
@@ -248,6 +253,7 @@ body {
   font-weight: 400;
   color: #272a31;
   line-height: 1.999rem;
+  max-width: 60ch;
 }
 
 .activities {
@@ -288,6 +294,7 @@ body {
   font-weight: 800;
   color: #1bc54b;
   line-height: 1.999rem;
+  max-width: 60ch;
   margin-right: 0.5rem;
   text-align: left;
 }
@@ -297,6 +304,7 @@ body {
   font-weight: 400;
   color: #fff;
   line-height: 1.999rem;
+  max-width: 60ch;
   flex: 1 0 50%;
 }
 
@@ -344,6 +352,7 @@ body {
   font-weight: 700;
   color: #272a31;
   line-height: 1.999rem;
+  max-width: 60ch;
   margin-bottom: 0.5em;
 }
 .guests__role {
@@ -352,6 +361,7 @@ body {
   font-weight: 500;
   color: #1bc54b;
   line-height: 1.999rem;
+  max-width: 60ch;
   font-style: italic;
   margin-bottom: 0.707em;
 }
@@ -361,6 +371,7 @@ body {
   font-weight: 400;
   color: #272a31;
   line-height: 1.414rem;
+  max-width: 60ch;
 }
 
 .partners {
@@ -385,6 +396,10 @@ body {
   flex: 0 0 33.333%;
   padding: 0 0.707em;
 }
+.partners__img {
+  max-height: 6.5rem;
+  margin: 0 auto;
+}
 
 .footer {
   display: flex;
@@ -396,7 +411,7 @@ body {
   margin: 0 auto;
 }
 .footer__img {
-  flex: 0 0 46%;
+  flex: 0 0 40%;
   max-height: 3.998rem;
 }
 .footer__desc {
@@ -405,7 +420,8 @@ body {
   font-weight: 400;
   color: #272a31;
   line-height: 1.414rem;
-  flex: 0 0 46%;
+  max-width: 60ch;
+  flex: 0 0 52%;
 }
 
 .toggler {
@@ -483,6 +499,7 @@ body {
   font-weight: 400;
   color: #fff;
   line-height: 1.999rem;
+  max-width: 60ch;
 }
 
 .button-orange {
@@ -507,6 +524,7 @@ body {
   font-weight: 400;
   color: #272a31;
   line-height: 1.999rem;
+  max-width: 60ch;
 }
 .accordion .fas {
   margin-left: 1rem;
@@ -519,6 +537,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   background: #f7f7f7;
   position: relative;
   z-index: -1;
@@ -539,6 +558,7 @@ body {
   font-weight: 400;
   color: #1bc54b;
   line-height: 1.999rem;
+  max-width: 60ch;
   margin-bottom: 1.999rem;
   text-align: center;
 }
@@ -548,6 +568,7 @@ body {
   font-weight: 900;
   color: #1bc54b;
   line-height: 4rem;
+  max-width: 60ch;
   margin-bottom: 1.999rem;
   text-align: center;
 }
@@ -557,6 +578,7 @@ body {
   font-weight: 400;
   color: #272a31;
   line-height: 1.999rem;
+  max-width: 60ch;
   border: #d3d3d3 0.1rem solid;
   padding: 1em 1.999rem;
   background: #fff;
@@ -571,7 +593,123 @@ body {
   font-weight: 400;
   color: #272a31;
   line-height: 1.999rem;
+  max-width: 60ch;
   text-align: center;
+}
+
+.logo-info {
+  padding: 2.827em 1.999rem;
+  background: #fff;
+  color: #272a31;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: rgba(39, 42, 49, 0.2) 1px solid;
+  border-bottom: rgba(39, 42, 49, 0.2) 1px solid;
+}
+.logo-info__title {
+  margin-bottom: 0.354em;
+  text-align: center;
+}
+.logo-info p {
+  font-family: "lato", sans-serif;
+  font-size: 1.414rem;
+  font-weight: 400;
+  color: #000;
+  line-height: 1.999rem;
+  max-width: 60ch;
+  flex: 1 0 50%;
+  text-align: center;
+  margin-bottom: 1.414em;
+}
+.logo-info__logo-container {
+  width: 100%;
+  padding: 1.999rem 2.827rem;
+  border: rgba(39, 42, 49, 0.2) 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-info__logo {
+  position: relative;
+  top: 0.3rem;
+  right: 0.3rem;
+}
+
+.past {
+  padding: 2.827em 1.999rem;
+  background: #fff;
+  color: #272a31;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.past__title {
+  margin-bottom: 0.354em;
+  text-align: center;
+}
+.past__desc {
+  font-family: "lato", sans-serif;
+  font-size: 1.414rem;
+  font-weight: 400;
+  color: #000;
+  line-height: 1.999rem;
+  max-width: 60ch;
+  flex: 1 0 50%;
+  text-align: center;
+  margin-bottom: 1.414em;
+}
+.past__events-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  row-gap: 1.414em;
+}
+.past__events {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #1bc54b url(../assets/img/yosemite-1.jpg) 50% 75% no-repeat;
+  background-size: 100%;
+  padding: 3.998em 1rem;
+  width: 100%;
+  text-decoration: none;
+  position: relative;
+  transition: background-size 200ms ease-in-out;
+}
+.past__events:hover, .past__events:active {
+  background-size: 107%;
+}
+.past__events::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(27, 197, 75, 0.6);
+}
+.past__year {
+  font-family: "lato", sans-serif;
+  font-size: 2.827rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.999rem;
+  max-width: 60ch;
+  margin-bottom: 0.5em;
+  z-index: 2;
+}
+.past__event-desc {
+  font-family: "lato", sans-serif;
+  font-size: 1.414rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.999rem;
+  max-width: 60ch;
+  z-index: 2;
 }
 
 /*# sourceMappingURL=main.css.map */
