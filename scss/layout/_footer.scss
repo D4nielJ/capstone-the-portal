@@ -1,0 +1,21 @@
+@use '../abstracts/' as *;
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: $s-xxl-em $s-xl;
+  column-gap: 8%;
+  max-width: 40rem;
+  margin: 0 auto;
+
+  &__img {
+    flex: 0 0 46%;
+    max-height: $s-xxxl;
+  }
+
+  &__desc {
+    @include font-styler ($size: $s-md, $line-height: $s-lg);
+    flex: 0 0 46%;
+  }
+}

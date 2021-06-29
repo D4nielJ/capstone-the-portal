@@ -5,5 +5,63 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100%;  
+
+  &__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    min-height: 0;
+    background-color: rgba($light-color, 0.7);
+    backdrop-filter: blur(6px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: $s-xxl-em $s-xl;
+    opacity: 0;
+    visibility: hidden;
+
+    &--active {
+      width: 100%;
+      min-height: 100vh;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &__item {
+    padding: $s-md-em $s-lg;
+    @include font-styler($size: $s-xl, $color: $primary-color-2d);
+    cursor: pointer;
+
+    &:hover {
+      color: $primary-color;
+    }
+
+    &--active {
+      color: $primary-color;
+      position: relative;
+
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: $s-md;
+        width: 4rem;
+        height: 0.2rem;
+        background: $primary-color;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__logo {
+    order: 2;
+  }
+  
+  &__img-logo {
+    width: 50%;
+    max-height: 4.5rem;
+  }
 }

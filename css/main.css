@@ -43,6 +43,8 @@ body {
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Make images easier to work with */
@@ -101,6 +103,60 @@ body {
   left: 0;
   width: 100%;
 }
+.navbar__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  min-height: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(6px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2.827em 1.999rem;
+  opacity: 0;
+  visibility: hidden;
+}
+.navbar__container--active {
+  width: 100%;
+  min-height: 100vh;
+  opacity: 1;
+  visibility: visible;
+}
+.navbar__item {
+  padding: 1em 1.414rem;
+  font-family: "lato", sans-serif;
+  font-size: 1.999rem;
+  font-weight: 400;
+  color: #073615;
+  line-height: 1.999rem;
+  cursor: pointer;
+}
+.navbar__item:hover {
+  color: #1bc54b;
+}
+.navbar__item--active {
+  color: #1bc54b;
+  position: relative;
+}
+.navbar__item--active::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 1rem;
+  width: 4rem;
+  height: 0.2rem;
+  background: #1bc54b;
+  margin-bottom: 0;
+}
+.navbar__logo {
+  order: 2;
+}
+.navbar__img-logo {
+  width: 50%;
+  max-height: 4.5rem;
+}
 
 .home {
   min-height: 90vh;
@@ -126,7 +182,7 @@ body {
 .home__title h2 {
   font-family: "lato", sans-serif;
   font-size: 2.2rem;
-  font-weight: normal;
+  font-weight: 400;
   color: #1bc54b;
   line-height: 1.999rem;
   margin-bottom: 1.999rem;
@@ -145,7 +201,7 @@ body {
 .home__desc {
   font-family: "lato", sans-serif;
   font-size: 1.414rem;
-  font-weight: normal;
+  font-weight: 400;
   color: #272a31;
   line-height: 1.999rem;
   border: #fff 0.3rem solid;
@@ -156,7 +212,7 @@ body {
 .home__date {
   font-family: "cocogoose", "lato", sans-serif;
   font-size: 2.2rem;
-  font-weight: normal;
+  font-weight: 400;
   color: #272a31;
   line-height: 1.999rem;
   margin-bottom: 1rem;
@@ -164,7 +220,7 @@ body {
 .home__location {
   font-family: "lato", sans-serif;
   font-size: 1.414rem;
-  font-weight: normal;
+  font-weight: 400;
   color: #272a31;
   line-height: 1.999rem;
 }
@@ -178,7 +234,7 @@ body {
   align-items: center;
 }
 .activities__title {
-  margin-bottom: 1em;
+  margin-bottom: 0.354em;
 }
 .activities__card {
   width: 100%;
@@ -213,7 +269,7 @@ body {
 .activities p {
   font-family: "lato", sans-serif;
   font-size: 1.414rem;
-  font-weight: normal;
+  font-weight: 400;
   color: #fff;
   line-height: 1.999rem;
   flex: 1 0 50%;
@@ -228,7 +284,7 @@ body {
   align-items: center;
 }
 .guests__title {
-  margin-bottom: 1em;
+  margin-bottom: 0.354em;
 }
 .guests__card {
   display: flex;
@@ -277,9 +333,54 @@ body {
 .guests__desc {
   font-family: "lato", sans-serif;
   font-size: 1rem;
-  font-weight: normal;
+  font-weight: 400;
   color: #272a31;
   line-height: 1.414rem;
+}
+
+.partners {
+  padding: 2.827em 1.999rem;
+  background: #272a31;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.partners__title {
+  margin-bottom: 0.354em;
+}
+.partners__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  gap: 1.414em 0;
+}
+.partners__img-container {
+  flex: 0 0 33.333%;
+  padding: 0 0.707em;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2.827em 1.999rem;
+  column-gap: 8%;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+.footer__img {
+  flex: 0 0 46%;
+  max-height: 3.998rem;
+}
+.footer__desc {
+  font-family: "lato", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #272a31;
+  line-height: 1.414rem;
+  flex: 0 0 46%;
 }
 
 .toogler {
@@ -303,7 +404,7 @@ body {
   width: 4rem;
   height: 0.2rem;
   background: #1bc54b;
-  margin-bottom: 1em;
+  margin-bottom: 1.999em;
 }
 
 .title-decor--small {
@@ -317,7 +418,7 @@ body {
   padding: 1.414em 2.827rem;
   font-family: "lato", sans-serif;
   font-size: 1.999rem;
-  font-weight: normal;
+  font-weight: 400;
   color: #fff;
   line-height: 1.999rem;
 }
@@ -341,7 +442,7 @@ body {
   border-radius: 0.4rem;
   font-family: "lato", sans-serif;
   font-size: 1.414rem;
-  font-weight: normal;
+  font-weight: 400;
   color: #272a31;
   line-height: 1.999rem;
 }

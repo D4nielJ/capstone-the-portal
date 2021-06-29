@@ -11,12 +11,15 @@
 @use 'layout/home';
 @use 'layout/activities';
 @use 'layout/guests';
+@use 'layout/partners';
+@use 'layout/footer';
 
 // Components
 @use 'components/toogler';
 @use 'components/decor';
 @use 'components/buttons';
 @use 'components/accordion';
+@use 'components/mobile-menu';
 
 // Pages
 

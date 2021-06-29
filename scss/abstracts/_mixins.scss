@@ -1,6 +1,6 @@
 @use 'variables' as *;
 
-@mixin font-styler ($family: $lato, $size: $s-lg, $weight: normal, $color: $secondary-color, $line-height: $s-xl) {
+@mixin font-styler ($family: $lato, $size: $s-lg, $weight: 400, $color: $secondary-color, $line-height: $s-xl) {
   font-family: $family;
   font-size: $size;
   font-weight: $weight;
