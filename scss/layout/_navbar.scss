@@ -1,5 +1,9 @@
 @use '../abstracts/' as *;
 
+.body--overflow {
+  overflow: hidden;
+}
+
 .navbar {
   z-index: 3;
   padding: $s-lg-em $s-xl;
@@ -32,8 +36,9 @@
     opacity: 0;
     visibility: hidden;
     transition: 
-      transform $speed1 ease-in-out,
-      top $speed1 ease-in-out,
+      visibility 0s,
+      opacity $speed1 ease-in-out,
+      width $speed1 ease-in-out,
     ;
 
     &--active {

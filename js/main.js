@@ -1,6 +1,7 @@
 // N A B V A R
 // Selectors
 
+const body = document.querySelector('body');
 const navbar = document.querySelector('.navbar');
 const navbarToggler = document.querySelector('.navbar__toggler-container');
 const navbarTogglerIcon = document.querySelector('.navbar__toggler');
@@ -12,6 +13,7 @@ const navbarItemActive = document.querySelector('.navbar__item--active');
 const toggleMenu = () => {
   navbarContainer.classList.toggle('navbar__container--active');
   navbarTogglerIcon.classList.toggle('toggler--active');
+  body.classList.toggle('body--overflow');
 }
 
 const closeMenu = () => {

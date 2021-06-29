@@ -96,6 +96,10 @@ body {
   font-size: 1.6rem;
 }
 
+.body--overflow {
+  overflow: hidden;
+}
+
 .navbar {
   z-index: 3;
   padding: 1.414em 1.999rem;
@@ -126,7 +130,7 @@ body {
   padding: 5.653em 1.999rem;
   opacity: 0;
   visibility: hidden;
-  transition: transform 200ms ease-in-out, top 200ms ease-in-out;
+  transition: visibility 0s, opacity 200ms ease-in-out, width 200ms ease-in-out;
 }
 .navbar__container--active {
   width: 100%;
