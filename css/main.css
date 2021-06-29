@@ -97,26 +97,36 @@ body {
 }
 
 .navbar {
+  z-index: 3;
   padding: 1.414em 1.999rem;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
 }
-.navbar__container {
+.navbar__toggler-container {
   position: fixed;
+  display: inline-block;
+  cursor: pointer;
+  min-height: 1.9rem;
+  z-index: inherit;
+}
+.navbar__container {
+  position: absolute;
   top: 0;
   left: 0;
   width: 0%;
   min-height: 0;
   background-color: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 2.827em 1.999rem;
+  padding: 5.653em 1.999rem;
   opacity: 0;
   visibility: hidden;
+  transition: transform 200ms ease-in-out, top 200ms ease-in-out;
 }
 .navbar__container--active {
   width: 100%;
@@ -154,7 +164,8 @@ body {
   order: 2;
 }
 .navbar__img-logo {
-  width: 50%;
+  padding: 0 1.414rem;
+  width: auto;
   max-height: 4.5rem;
 }
 
@@ -308,8 +319,8 @@ body {
   left: 0;
 }
 .guests__img {
-  position: absolute;
   z-index: 2;
+  position: absolute;
   width: 87%;
   right: 0;
   bottom: 0;
@@ -384,20 +395,46 @@ body {
   flex: 0 0 46%;
 }
 
-.toogler {
+.toggler {
   cursor: pointer;
-  display: inline-block;
-  padding: 1rem;
-}
-.toogler__line {
-  display: block;
   width: 2.8rem;
   height: 0.3rem;
   background: #272a31;
-  margin-bottom: 0.5rem;
+  position: relative;
+  top: 0;
+  transition: transform 200ms ease-in-out, top 200ms ease-in-out;
 }
-.toogler__line:last-child {
-  margin-bottom: 0;
+.toggler::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 0.3rem;
+  background: #272a31;
+  top: 0.8rem;
+  opacity: 1;
+  transition: opacity 200ms ease-in-out;
+}
+.toggler::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 2.8rem;
+  height: 0.3rem;
+  background: #272a31;
+  top: 1.6rem;
+  transition: transform 200ms ease-in-out, top 200ms ease-in-out;
+}
+.toggler--active {
+  transform: rotate(135deg);
+  top: 1rem;
+}
+.toggler--active::after {
+  opacity: 0;
+}
+.toggler--active::before {
+  transform: rotate(90deg);
+  top: 0rem;
 }
 
 .title-decor {

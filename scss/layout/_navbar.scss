@@ -1,26 +1,40 @@
 @use '../abstracts/' as *;
 
 .navbar {
+  z-index: 3;
   padding: $s-lg-em $s-xl;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
 
-  &__container {
+  &__toggler-container {
     position: fixed;
+    display: inline-block;
+    cursor: pointer;    
+    min-height: (0.3*3+0.5*2rem);
+    z-index: inherit;
+  }
+
+  &__container {
+    position: absolute;
     top: 0;
     left: 0;
     width: 0%;
     min-height: 0;
     background-color: rgba($light-color, 0.7);
     backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: $s-xxl-em $s-xl;
+    padding: $s-llg-em $s-xl;
     opacity: 0;
     visibility: hidden;
+    transition: 
+      transform $speed1 ease-in-out,
+      top $speed1 ease-in-out,
+    ;
 
     &--active {
       width: 100%;
@@ -61,7 +75,8 @@
   }
 
   &__img-logo {
-    width: 50%;
+    padding: 0 $s-lg;
+    width: auto;
     max-height: 4.5rem;
   }
 }
