@@ -513,4 +513,65 @@ body {
   color: #1bc54b;
 }
 
+.about {
+  min-height: 90vh;
+  padding: 5.653em 1.999rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #f7f7f7;
+  position: relative;
+  z-index: -1;
+}
+.about__title-bg {
+  top: 0;
+  left: 0;
+  position: absolute;
+  content: "";
+  background-color: rgba(255, 255, 255, 0.8);
+  min-height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.about__title h2 {
+  font-family: "lato", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #1bc54b;
+  line-height: 1.999rem;
+  margin-bottom: 1.999rem;
+  text-align: center;
+}
+.about__title h1 {
+  font-family: "cocogoose", "lato", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #1bc54b;
+  line-height: 4rem;
+  margin-bottom: 1.999rem;
+  text-align: center;
+}
+.about__desc {
+  font-family: "lato", sans-serif;
+  font-size: 1.414rem;
+  font-weight: 400;
+  color: #272a31;
+  line-height: 1.999rem;
+  border: #d3d3d3 0.1rem solid;
+  padding: 1em 1.999rem;
+  background: #fff;
+  text-align: center;
+  max-width: 60ch;
+  margin: 0 auto;
+  margin-bottom: 1.999rem;
+}
+.about__location {
+  font-family: "lato", sans-serif;
+  font-size: 1.414rem;
+  font-weight: 400;
+  color: #272a31;
+  line-height: 1.999rem;
+  text-align: center;
+}
+
 /*# sourceMappingURL=main.css.map */
