@@ -13,6 +13,16 @@
     margin-bottom: $s-xxs-em;
   }
 
+  &__list {
+    @include mq.media('>=tablet') {
+      display: flex;
+      gap: $s-lg $s-xs;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: $s-xl-em !important;
+    }
+  }
+
   &__card {
     width: 100%;
     margin: $s-md 0;
@@ -22,8 +32,20 @@
     align-items: center;
     justify-content: space-between;
 
+    @include mq.media('>=tablet') {
+      width: auto;
+      max-width: 20ch;
+      min-height: 20rem;
+      margin: 0;
+      flex-direction: column;
+      text-align: center;
+    }
+
     &--last {
       margin-bottom: $s-xl-em;
+      @include mq.media('>=tablet') {
+        margin: 0;
+      }
     }
   }
 
@@ -32,17 +54,27 @@
     font-size: $s-xxl;
     color: $accent-lighter-color;
     margin-right: $s-md;
+    @include mq.media('>=tablet') {
+      margin: 0;
+      margin-bottom: $s-xs-em;
+    }
   }
 
   &__subtitle {
     flex: 1 0 50%;
     display: flex;
     align-items: center;
-
     @include font-styler($size: $s-lg, $color: $primary-color, $weight: 800);
-
     margin-right: $s-xs;
     text-align: left;
+    @include mq.media('>=tablet') {
+      margin-right: 0;
+      margin-bottom: $s-xs-em;
+      flex-direction: column;
+      justify-content: space-around;
+      @include font-styler($size: $s-xl, $color: $primary-color, $weight: 800);
+      text-align: center;
+    }
   }
 
   & p {
