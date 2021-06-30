@@ -429,7 +429,8 @@ $im-no-media-expressions: ('screen', 'portrait', 'landscape') !default;
     $character: str-slice($value, $i, $i);
 
     @if not (index(map-keys($numbers), $character) or $character == '.') {
-      @return to-length(if($minus, -$result, $result), str-slice($value, $i)); }
+      @return to-length(if($minus, -$result, $result), str-slice($value, $i));
+    }
 
     @if $character == '.' {
       $digits: 1;

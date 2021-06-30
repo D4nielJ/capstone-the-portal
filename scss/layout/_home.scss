@@ -17,8 +17,8 @@
     left: 0;
     position: absolute;
     content: '';
-    background-color: rgba($light-color, 0.8);
     background: linear-gradient(-10deg, rgba($light-color, 1) 45%, rgba($light-color, 0.5));
+    background-color: rgba($light-color, 0.8);
     min-height: 100%;
     width: 100%;
     z-index: -1;
@@ -29,7 +29,6 @@
       @include font-styler ($lato, $s-xl, $color: $primary-color);
 
       margin-bottom: $s-xs-em;
-
 
       @include mq.media('>=tablet') {
         font-size: $s-xxl;

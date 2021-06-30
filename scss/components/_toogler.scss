@@ -51,7 +51,7 @@
 
   &--active {
     background-color: $secondary-color;
-    transform: rotate(90+45deg);
+    transform: rotate(135deg);
 
     &::after {
       background-color: $secondary-color;

@@ -40,7 +40,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    min-height: (0.3*3+0.5*2rem);
+    min-height: 1.9rem;
     z-index: inherit;
 
     @include mq.media('>=tablet') {

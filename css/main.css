@@ -311,8 +311,8 @@ body {
   left: 0;
   position: absolute;
   content: "";
-  background-color: rgba(255, 255, 255, 0.8);
   background: linear-gradient(-10deg, white 45%, rgba(255, 255, 255, 0.5));
+  background-color: rgba(255, 255, 255, 0.8);
   min-height: 100%;
   width: 100%;
   z-index: -1;
