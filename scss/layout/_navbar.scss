@@ -54,6 +54,7 @@
     top: 0;
     left: 0;
     width: 0%;
+    max-width: 110rem;
     min-height: 0;
     background-color: rgba($light-color, 0.7);
     backdrop-filter: blur(6px);
@@ -80,7 +81,6 @@
       -webkit-backdrop-filter: none;
       flex-direction: row;
       padding: 0;
-      // @include max-width;
     }
 
     &--active {
@@ -106,6 +106,12 @@
       @include font-styler($size: $s-lg, $color: $primary-color-2d);
     }
 
+    @include mq.media('>=desktop') {
+      @include font-styler($size: 1.6rem, $color: $primary-color-2d);
+      padding: $s-md-em $s-xxl;
+    }
+
+
     &:hover {
       color: $primary-color;
     }
@@ -124,9 +130,7 @@
         background: $primary-color;
         margin-bottom: 0;
         @include mq.media('>=tablet') {
-          width: 2rem;
-          height: 0.1rem;
-          bottom: $s-lg;
+          content: none;
         }
       }
     }
@@ -150,6 +154,7 @@
       order: 0;
       display: flex;
       align-items: center;
+      padding-left: $s-lg;
     }
   }
 

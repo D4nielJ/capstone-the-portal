@@ -173,6 +173,7 @@ body {
   top: 0;
   left: 0;
   width: 0%;
+  max-width: 110rem;
   min-height: 0;
   background-color: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(6px);
@@ -229,6 +230,17 @@ body {
     max-width: 60ch;
   }
 }
+@media (min-width: 1024px) {
+  .navbar__item {
+    font-family: "lato", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #073615;
+    line-height: 1.414em;
+    max-width: 60ch;
+    padding: 1em 2.827rem;
+  }
+}
 .navbar__item:hover {
   color: #1bc54b;
 }
@@ -248,9 +260,7 @@ body {
 }
 @media (min-width: 768px) {
   .navbar__item--active::after {
-    width: 2rem;
-    height: 0.1rem;
-    bottom: 1.414rem;
+    content: none;
   }
 }
 @media (min-width: 768px) {
@@ -271,6 +281,7 @@ body {
     order: 0;
     display: flex;
     align-items: center;
+    padding-left: 1.414rem;
   }
 }
 .navbar__img-logo {
