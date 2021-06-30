@@ -14,11 +14,11 @@ const toggleMenu = () => {
   navbarContainer.classList.toggle('navbar__container--active');
   navbarTogglerIcon.classList.toggle('toggler--active');
   body.classList.toggle('body--overflow');
-}
+};
 
 const closeMenu = () => {
   navbarContainer.classList.remove('navbar__container--active');
-}
+};
 
 // Events
 
@@ -31,20 +31,19 @@ let scrolling = false;
 
 window.addEventListener('scroll', () => {
   scrolling = true;
-})
+});
 
 setInterval(() => {
-    if (scrolling) {
-        scrolling = false;
-        if (window.scrollY === 0) {
-          navbar.classList.remove('navbar--scrolled');
-          navbarTogglerIcon.classList.remove('toggler--scrolled');
-        } else {
-          navbar.classList.add('navbar--scrolled');
-          navbarTogglerIcon.classList.add('toggler--scrolled');
-        }
+  if (scrolling) {
+    scrolling = false;
+    if (window.scrollY === 0) {
+      navbar.classList.remove('navbar--scrolled');
+      navbarTogglerIcon.classList.remove('toggler--scrolled');
+    } else {
+      navbar.classList.add('navbar--scrolled');
+      navbarTogglerIcon.classList.add('toggler--scrolled');
     }
+  }
 }, 300);
 
 // DYNAMIC SECTION FOR GUESTS
-
