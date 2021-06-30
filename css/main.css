@@ -96,6 +96,32 @@ body {
   font-size: 1.6rem;
 }
 
+.mw-container {
+  width: 100%;
+  max-width: 96rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: inherit;
+  flex-direction: inherit;
+  align-content: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  gap: inherit;
+  column-gap: inherit;
+}
+
+@media (min-width: 768px) {
+  .only-mobile {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .only-desktop {
+    display: none !important;
+  }
+}
+
 .body--overflow {
   overflow: hidden;
 }
@@ -264,7 +290,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: url(../assets/img/yosemite-1.jpg) 50% 75% no-repeat;
+  background: url(../assets/img/yosemite-1.jpg) 50% 40% no-repeat;
   background-size: cover;
   position: relative;
   z-index: -1;
@@ -275,6 +301,7 @@ body {
   position: absolute;
   content: "";
   background-color: rgba(255, 255, 255, 0.8);
+  background: linear-gradient(-10deg, white 45%, rgba(255, 255, 255, 0.5));
   min-height: 100%;
   width: 100%;
   z-index: -1;
@@ -304,7 +331,7 @@ body {
   color: #1bc54b;
   line-height: 1em;
   max-width: 60ch;
-  margin-bottom: 1.999rem;
+  margin-bottom: 0.5em;
 }
 @media (min-width: 768px) {
   .home__title h1 {
@@ -575,25 +602,40 @@ body {
 
 .footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   padding: 2.827em 1.999rem;
   column-gap: 8%;
-  max-width: 40rem;
-  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .footer {
+    justify-content: space-between;
+  }
+}
+@media (min-width: 768px) {
+  .footer--dark {
+    background-color: #272a31;
+    color: #fff;
+  }
 }
 .footer__img {
-  flex: 0 0 40%;
+  width: fit-content;
+}
+.footer__img img {
   max-height: 3.998rem;
 }
 .footer__desc {
   font-family: "lato", sans-serif;
   font-size: 1rem;
   font-weight: 400;
-  color: #272a31;
-  line-height: 1.414rem;
+  color: inherit;
+  line-height: 1.414em;
   max-width: 60ch;
-  flex: 0 0 52%;
+}
+@media (min-width: 768px) {
+  .footer__desc {
+    font-size: 1.414rem;
+  }
 }
 
 .toggler {
@@ -714,6 +756,11 @@ body {
   position: relative;
   z-index: -1;
 }
+@media (min-width: 768px) {
+  .about {
+    padding: 11em 1.999rem 5.653em;
+  }
+}
 .about__title-bg {
   top: 0;
   left: 0;
@@ -726,23 +773,44 @@ body {
 }
 .about__title h2 {
   font-family: "lato", sans-serif;
-  font-size: 2.2rem;
+  font-size: 1.999rem;
   font-weight: 400;
   color: #1bc54b;
   line-height: 1.414em;
   max-width: 60ch;
-  margin-bottom: 1.999rem;
+  margin-bottom: 0.5em;
   text-align: center;
+}
+@media (min-width: 768px) {
+  .about__title h2 {
+    display: none;
+  }
 }
 .about__title h1 {
   font-family: "cocogoose", "lato", sans-serif;
-  font-size: 3.5rem;
+  font-size: 3.998rem;
   font-weight: 900;
   color: #1bc54b;
-  line-height: 4rem;
+  line-height: 1em;
   max-width: 60ch;
-  margin-bottom: 1.999rem;
+  margin-bottom: 0.5em;
   text-align: center;
+}
+@media (min-width: 768px) {
+  .about__title h1 {
+    font-size: 5.653rem;
+    max-width: 15ch;
+  }
+}
+.about__title-decor {
+  display: none;
+}
+@media (min-width: 768px) {
+  .about__title-decor {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 .about__desc {
   font-family: "lato", sans-serif;
@@ -757,7 +825,13 @@ body {
   text-align: center;
   max-width: 60ch;
   margin: 0 auto;
-  margin-bottom: 1.999rem;
+  margin-bottom: 1.414em;
+}
+@media (min-width: 768px) {
+  .about__desc {
+    margin-bottom: 3.998em;
+    padding: 1.999em 7.993rem;
+  }
 }
 .about__location {
   font-family: "lato", sans-serif;
@@ -796,6 +870,7 @@ body {
 }
 .logo-info__logo-container {
   width: 100%;
+  max-width: 50rem;
   padding: 1.999rem 2.827rem;
   border: rgba(39, 42, 49, 0.2) 1px solid;
   display: flex;
@@ -838,6 +913,13 @@ body {
   justify-content: center;
   width: 100%;
   row-gap: 1.414em;
+}
+@media (min-width: 768px) {
+  .past__events-container {
+    flex-direction: row;
+    gap: 1.999rem;
+    margin-bottom: 5.653rem;
+  }
 }
 .past__events {
   display: flex;

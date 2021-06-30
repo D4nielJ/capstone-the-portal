@@ -15,9 +15,11 @@
       <div class="navbar__toggler-container">
         <div class="navbar__toggler toggler"></div>
       </div>
-      <div class="navbar__container">
+      <div class="navbar__container mw-container">
         <div class="navbar__logo">
-          <img src="./assets/img/partners/Google.svg" alt="SC Identifier" class="navbar__img-logo">
+          <a href="#">
+            <img src="./assets/img/partners/Google.svg" alt="SC Identifier" class="navbar__img-logo">
+          </a>
         </div>
         <ul class="navbar__links navbar__links--mobile" role="list">
           <li class="navbar__item navbar__item--active navbar__item--SC"><a href="#">SC Summit</a></li>
@@ -33,18 +35,21 @@
   <main>
     <!-- H O M E  -->
     <section id="home" class="home">
-      <div class="home__title-bg"></div>
-      <hgroup class="home__title">
-        <h2>"Hello! Fellow Adventurer"</h2>
-        <h1>SURVIVAL CAMP GLOBAL SUMMIT 2022</h1>
-      </hgroup>
-      <p class="home__desc">A joyful camp believing in the value of openness and sharing, creating a positive change with people from over 80 countries is taking place in October, in USA.</p>
-      <p class="home__date">2022.10.15(THU) ~ 18(SUN)</p>
-      <p class="home__location">@ Yosemite National Park in California's Sierra Nevada mountains.</p>           
+      <div class="mw-container">
+        <div class="home__title-bg"></div>
+        <hgroup class="home__title">
+          <h2>"Hello! Fellow Adventurer"</h2>
+          <h1>SURVIVAL CAMP GLOBAL SUMMIT 2022</h1>
+        </hgroup>
+        <p class="home__desc">A joyful camp believing in the value of openness and sharing, creating a positive change with people from over 80 countries is taking place in October, in USA.</p>
+        <p class="home__date">2022.10.15(THU) ~ 18(SUN)</p>
+        <p class="home__location">@ Yosemite National Park in California's Sierra Nevada mountains.</p>           
+      </div>
     </section>
     <!-- A C T I V I T I E S -->
     <section id="activities" class="activities">
-      <h2 class="activities__title">Activities</h2>
+      <div class="mw-container">
+        <h2 class="activities__title">Activities</h2>
       <span class="title-decor"></span>
       
       <ul class="activities__list" role="list">
@@ -90,10 +95,12 @@
       </ul>      
       <a href="#" class="activities__program">See the whole program</a>
       <a href="#" class="activities__button button button-orange">Join SC Global Summit 2022</a>
+      </div>
     </section>
     <!-- S P E A K E R S -->
     <section id="guests" class="guests">
-      <h2 class="guests__title">Featured Guests</h2>
+      <div class="mw-container">
+        <h2 class="guests__title">Featured Guests</h2>
       <span class="title-decor"></span>
 
       <ul class="guests__list" role="list">
@@ -159,35 +166,42 @@
       </ul>
 
       <button type="button" class="accordion guests__accordion">MORE<span class="fas fa-chevron-down"></span></button>
+      </div>
     </section>
   </main>
   <footer>
     <!-- P A R T N E R S -->
     <section class="partners">
-      <h2 class="partners__title">Partner</h2>
-      <span class="title-decor"></span>
-      <ul class="partners__list" role="list">
-        <li class="partners__img-container">
-          <img src="./assets/img/partners/Google.svg" alt="" class="partners__img">
-        </li>
-        <li class="partners__img-container">
-          <img src="./assets/img/partners/Google.svg" alt="" class="partners__img">
-        </li>
-        <li class="partners__img-container">
-          <img src="./assets/img/partners/Google.svg" alt="" class="partners__img">
-        </li>
-        <li class="partners__img-container">
-          <img src="./assets/img/partners/Google.svg" alt="" class="partners__img">
-        </li>
-        <li class="partners__img-container">
-          <img src="./assets/img/partners/Google.svg" alt="" class="partners__img">
-        </li>
-      </ul>
+      <div class="mw-container">
+        <h2 class="partners__title">Partner</h2>
+        <span class="title-decor"></span>
+        <ul class="partners__list" role="list">
+          <li class="partners__img-container">
+            <img src="./assets/img/partners/Google.svg" alt="" class="partners__img">
+          </li>
+          <li class="partners__img-container">
+            <img src="./assets/img/partners/Google.svg" alt="" class="partners__img">
+          </li>
+          <li class="partners__img-container">
+            <img src="./assets/img/partners/Google.svg" alt="" class="partners__img">
+          </li>
+          <li class="partners__img-container">
+            <img src="./assets/img/partners/Google.svg" alt="" class="partners__img">
+          </li>
+          <li class="partners__img-container">
+            <img src="./assets/img/partners/Google.svg" alt="" class="partners__img">
+          </li>
+        </ul>
+      </div>
     </section>
     <!-- F O O T E R -->
     <section class="footer">
-      <img src="./assets/img/partners/Google.svg" alt="" class="footer__img">
-      <p class="footer__desc">2015 Survival Camp California.<br>Some Rights Reserved.</p>
+      <div class="mw-container">
+        <div class="footer__img">
+          <img src="./assets/img/partners/Google.svg" alt="">
+        </div>
+        <p class="footer__desc">2015 Survival Camp California.<br>Some Rights Reserved.</p>
+      </div>
     </section>
   </footer>
   <script src="js/main.js"></script>

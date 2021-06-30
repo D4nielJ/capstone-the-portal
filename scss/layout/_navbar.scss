@@ -80,6 +80,7 @@
       -webkit-backdrop-filter: none;
       flex-direction: row;
       padding: 0;
+      // @include max-width;
     }
 
     &--active {

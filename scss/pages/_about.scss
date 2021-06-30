@@ -1,4 +1,6 @@
+@use '../vendors/include-media' as mq;
 @use '../abstracts/' as *;
+// @include mq.media('>=tablet') {}
 
 .about {
   min-height: 90vh;
@@ -10,6 +12,10 @@
   background: $accent-lighter-color;
   position: relative;
   z-index: -1;
+  
+  @include mq.media('>=tablet') {
+    padding: 11em $s-xl $s-llg-em;
+  }
 
   &__title-bg {
     top: 0;
@@ -24,27 +30,51 @@
 
   &__title {
     & h2 {
-      @include font-styler ($lato, 2.2rem, $color: $primary-color);
-      margin-bottom: $s-xl;
+      @include font-styler ($lato, $s-xl, $color: $primary-color);
+      margin-bottom: $s-xs-em;
       text-align: center;
+
+      @include mq.media('>=tablet') {
+        display: none;
+      }
     }
 
     & h1 {
-      @include font-styler ($cocogoose, 3.5rem, 900, $line-height: 4rem, $color: $primary-color);
-      margin-bottom: $s-xl;
+      @include font-styler ($cocogoose, $s-xxxl, 900, $line-height: $s-md-em, $color: $primary-color);
+      margin-bottom: $s-xs-em;
       text-align: center;
+
+      @include mq.media('>=tablet') {
+        font-size: $s-llg;
+        max-width: 15ch;
+      }
+    }
+  }
+
+  &__title-decor {
+    display: none;
+
+    @include mq.media('>=tablet') {
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
     }
   }
 
   &__desc {
     @include font-styler;
     border: $accent-color 0.1rem solid;
-    padding: 1em $s-xl;
+    padding: $s-md-em $s-xl;
     background: $light-color;
     text-align: center;
     max-width: 60ch;
     margin: 0 auto;
-    margin-bottom: $s-xl;
+    margin-bottom: $s-lg-em;
+    
+    @include mq.media('>=tablet') {
+      margin-bottom: $s-xxxl-em;
+      padding: $s-xl-em $s-xll;
+    }
   }
 
   &__location {
@@ -77,6 +107,7 @@
 
   &__logo-container {
     width: 100%;
+    max-width: 50rem;
     padding: $s-xl $s-xxl;
     border: rgba($secondary-color, 0.2) 1px solid;
     display: flex;
@@ -118,6 +149,12 @@
     justify-content: center;
     width: 100%;
     row-gap: $s-lg-em;
+
+    @include mq.media('>=tablet') {
+      flex-direction: row;
+      gap: $s-xl;
+      margin-bottom: $s-llg;
+    }
   }
 
   &__events {
