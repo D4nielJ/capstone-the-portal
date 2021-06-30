@@ -70,8 +70,8 @@ const guestsArr = [
     role: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, animi.',
     imgSrc: './assets/img/guests/guest-1.webp',
-  }
-]
+  },
+];
 
 // Selectors
 
@@ -82,8 +82,7 @@ const guestsList = document.querySelector('.guests__list');
 const appendGuests = () => {
   for (let i = 0; i < guestsArr.length; i += 1) {
     const li = document.createElement('li');
-    li.innerHTML = 
-      `<div class="guests__img-container">
+    li.innerHTML = `<div class="guests__img-container">
         <span class="guests__decor-img"></span>
         <img src="${guestsArr[i].imgSrc}" alt="Photo of the first guest" class="guests__img">
       </div>
@@ -95,10 +94,10 @@ const appendGuests = () => {
         <span class="title-decor title-decor--small"></span>
         <p class="guests__desc">${guestsArr[i].desc}</p>
       </div>`;
-    li.classList.add('guests__card')
+    li.classList.add('guests__card');
     guestsList.appendChild(li);
-  }  
-}
+  }
+};
 
 // Call
 
