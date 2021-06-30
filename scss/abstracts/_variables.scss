@@ -44,3 +44,11 @@ $lato: 'lato', sans-serif;
 
 $speed1: 200ms;
 $speed2: 500ms;
+
+// Custom Media Queries
+
+$breakpoints: (
+  'phone': 32em,
+  'tablet': 76.8em,
+  'desktop': 102.4em
+);

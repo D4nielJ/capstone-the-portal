@@ -1,3 +1,4 @@
+@use '../vendors/include-media' as mq;
 @use '../abstracts/' as *;
 
 .body--overflow {
@@ -17,9 +18,19 @@
     background-color $speed1 ease-in-out,
   ;
 
+  @include mq.media('>=tablet') {
+    background-color: $light-color;
+    padding: $s-lg-em $s-xl;
+    box-shadow: 0px 1px 5px 1px rgba(0,0,0,0.3);
+  }
+
   &--scrolled {
     background-color: rgba($secondary-color, 1);
     padding: $s-lg-em $s-xl;
+    @include mq.media('>=tablet') {
+      background-color: $light-color;
+      padding: $s-xs-em $s-xl;
+    }
   }
 
   &__toggler-container {
@@ -31,6 +42,11 @@
     cursor: pointer;    
     min-height: (0.3*3+0.5*2rem);
     z-index: inherit;
+    
+    @include mq.media('>=tablet') {
+      visibility: hidden;
+    }
+
   }
 
   &__container {
@@ -54,6 +70,18 @@
       width $speed1 ease-in-out,
     ;
 
+    @include mq.media('>=tablet') {
+      visibility: visible;
+      opacity: 1;
+      width: 100%;
+      position: static;
+      background-color: transparent;
+      backdrop-filter: none;
+      -webkit-backdrop-filter: none;
+      flex-direction: row;
+      padding: 0;
+    }
+
     &--active {
       width: 100%;
       min-height: 100vh;
@@ -62,10 +90,20 @@
     }
   }
 
+  &__links {
+    @include mq.media('>=tablet') {
+      display: flex;
+    }
+  }
+
   &__item {
     padding: $s-md-em $s-lg;
     @include font-styler($size: $s-xl, $color: $primary-color-2d);
     cursor: pointer;
+    
+    @include mq.media('>=tablet') {
+      @include font-styler($size: $s-lg, $color: $primary-color-2d);
+    }
 
     &:hover {
       color: $primary-color;
@@ -84,17 +122,43 @@
         height: 0.2rem;
         background: $primary-color;
         margin-bottom: 0;
+        @include mq.media('>=tablet') {
+          width: 2rem;
+          height: 0.1rem;
+          bottom: $s-lg;
+        }
+      }
+    }
+
+    &--SC {
+      @include mq.media('>=tablet') {
+        border: $primary-color 0.2rem solid;
+        order: 1;
+        margin-left: $s-xl;
+
+        &::after {
+          content: none;
+        }
       }
     }
   }
 
   &__logo {
-    order: 2;
+    order: 1;
+    @include mq.media('>=tablet') {
+      order: 0;
+      display: flex;
+      align-items: center;
+    }
   }
 
   &__img-logo {
     padding: 0 $s-lg;
     width: auto;
     max-height: 4.5rem;
+
+    @include mq.media('>=tablet') {
+      padding: 0;
+    }
   }
 }
