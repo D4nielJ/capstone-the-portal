@@ -64,7 +64,7 @@
     flex: 1 0 50%;
     display: flex;
     align-items: center;
-    @include font-styler($size: $s-lg, $color: $primary-color, $weight: 800);
+    @include font-styler($size: $s-lg, $color: $primary-color, $weight: 700);
     margin-right: $s-xs;
     text-align: left;
     @include mq.media('>=tablet') {
@@ -72,7 +72,7 @@
       margin-bottom: $s-xs-em;
       flex-direction: column;
       justify-content: space-around;
-      @include font-styler($size: $s-xl, $color: $primary-color, $weight: 800);
+      font-size: $s-xl;
       text-align: center;
     }
   }
@@ -81,5 +81,19 @@
     @include font-styler($color: $light-color, $size: $s-lg);
 
     flex: 1 0 50%;
+  }
+
+  &__button {
+    @include mq.media('>=tablet') {
+      display: none;
+    }
+  }
+  
+  &__program {
+    text-transform: uppercase;
+    @include font-styler($color: $light-color, $size: $s-xl);
+    @include mq.media('<tablet') {
+      display: none;
+    }
   }
 }

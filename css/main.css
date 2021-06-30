@@ -189,7 +189,7 @@ body {
   font-size: 1.999rem;
   font-weight: 400;
   color: #073615;
-  line-height: 1.999rem;
+  line-height: 1.414em;
   max-width: 60ch;
   cursor: pointer;
 }
@@ -199,7 +199,7 @@ body {
     font-size: 1.414rem;
     font-weight: 400;
     color: #073615;
-    line-height: 1.999rem;
+    line-height: 1.414em;
     max-width: 60ch;
   }
 }
@@ -281,12 +281,17 @@ body {
 }
 .home__title h2 {
   font-family: "lato", sans-serif;
-  font-size: 2.2rem;
+  font-size: 1.999rem;
   font-weight: 400;
   color: #1bc54b;
-  line-height: 1.999rem;
+  line-height: 1.414em;
   max-width: 60ch;
-  margin-bottom: 1.999rem;
+  margin-bottom: 0.5em;
+}
+@media (min-width: 768px) {
+  .home__title h2 {
+    font-size: 2.827rem;
+  }
 }
 .home__title h1 {
   background: url(../assets/img/green-bg.jpg) 50% 50% no-repeat;
@@ -294,19 +299,24 @@ body {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   font-family: "cocogoose", "lato", sans-serif;
-  font-size: 3.5rem;
+  font-size: 3.998rem;
   font-weight: 900;
   color: #1bc54b;
-  line-height: 4rem;
+  line-height: 1em;
   max-width: 60ch;
   margin-bottom: 1.999rem;
+}
+@media (min-width: 768px) {
+  .home__title h1 {
+    font-size: 5.653rem;
+  }
 }
 .home__desc {
   font-family: "lato", sans-serif;
   font-size: 1.414rem;
   font-weight: 400;
   color: #272a31;
-  line-height: 1.999rem;
+  line-height: 1.414em;
   max-width: 60ch;
   border: #fff 0.3rem solid;
   padding: 1em 1.999rem;
@@ -315,20 +325,30 @@ body {
 }
 .home__date {
   font-family: "cocogoose", "lato", sans-serif;
-  font-size: 2.2rem;
+  font-size: 1.999rem;
   font-weight: 400;
   color: #272a31;
-  line-height: 1.999rem;
+  line-height: 1.414em;
   max-width: 60ch;
   margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .home__date {
+    font-size: 2.827rem;
+  }
 }
 .home__location {
   font-family: "lato", sans-serif;
   font-size: 1.414rem;
   font-weight: 400;
   color: #272a31;
-  line-height: 1.999rem;
+  line-height: 1.414em;
   max-width: 60ch;
+}
+@media (min-width: 768px) {
+  .home__location {
+    font-size: 1.999rem;
+  }
 }
 
 .activities {
@@ -396,9 +416,9 @@ body {
   align-items: center;
   font-family: "lato", sans-serif;
   font-size: 1.414rem;
-  font-weight: 800;
+  font-weight: 700;
   color: #1bc54b;
-  line-height: 1.999rem;
+  line-height: 1.414em;
   max-width: 60ch;
   margin-right: 0.5rem;
   text-align: left;
@@ -409,12 +429,7 @@ body {
     margin-bottom: 0.5em;
     flex-direction: column;
     justify-content: space-around;
-    font-family: "lato", sans-serif;
     font-size: 1.999rem;
-    font-weight: 800;
-    color: #1bc54b;
-    line-height: 1.999rem;
-    max-width: 60ch;
     text-align: center;
   }
 }
@@ -423,9 +438,28 @@ body {
   font-size: 1.414rem;
   font-weight: 400;
   color: #fff;
-  line-height: 1.999rem;
+  line-height: 1.414em;
   max-width: 60ch;
   flex: 1 0 50%;
+}
+@media (min-width: 768px) {
+  .activities__button {
+    display: none;
+  }
+}
+.activities__program {
+  text-transform: uppercase;
+  font-family: "lato", sans-serif;
+  font-size: 1.999rem;
+  font-weight: 400;
+  color: #fff;
+  line-height: 1.414em;
+  max-width: 60ch;
+}
+@media (max-width: 767px) {
+  .activities__program {
+    display: none;
+  }
 }
 
 .guests {
@@ -439,10 +473,23 @@ body {
 .guests__title {
   margin-bottom: 0.354em;
 }
+@media (min-width: 768px) {
+  .guests__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
 .guests__card {
   display: flex;
   align-items: center;
   margin-bottom: 2.827rem;
+}
+@media (min-width: 768px) {
+  .guests__card {
+    flex: 1 0 45%;
+  }
 }
 .guests__img-container {
   min-width: 12rem;
@@ -471,7 +518,7 @@ body {
   font-size: 1.999rem;
   font-weight: 700;
   color: #272a31;
-  line-height: 1.999rem;
+  line-height: 1.414em;
   max-width: 60ch;
   margin-bottom: 0.5em;
 }
@@ -480,7 +527,7 @@ body {
   font-size: 1.414rem;
   font-weight: 500;
   color: #1bc54b;
-  line-height: 1.999rem;
+  line-height: 1.414em;
   max-width: 60ch;
   font-style: italic;
   margin-bottom: 0.707em;
@@ -492,6 +539,11 @@ body {
   color: #272a31;
   line-height: 1.414rem;
   max-width: 60ch;
+}
+@media (min-width: 768px) {
+  .guests__accordion {
+    display: none;
+  }
 }
 
 .partners {
@@ -618,7 +670,7 @@ body {
   font-size: 1.999rem;
   font-weight: 400;
   color: #fff;
-  line-height: 1.999rem;
+  line-height: 1.414em;
   max-width: 60ch;
 }
 
@@ -643,7 +695,7 @@ body {
   font-size: 1.414rem;
   font-weight: 400;
   color: #272a31;
-  line-height: 1.999rem;
+  line-height: 1.414em;
   max-width: 60ch;
 }
 .accordion .fas {
@@ -677,7 +729,7 @@ body {
   font-size: 2.2rem;
   font-weight: 400;
   color: #1bc54b;
-  line-height: 1.999rem;
+  line-height: 1.414em;
   max-width: 60ch;
   margin-bottom: 1.999rem;
   text-align: center;
@@ -697,7 +749,7 @@ body {
   font-size: 1.414rem;
   font-weight: 400;
   color: #272a31;
-  line-height: 1.999rem;
+  line-height: 1.414em;
   max-width: 60ch;
   border: #d3d3d3 0.1rem solid;
   padding: 1em 1.999rem;
@@ -712,7 +764,7 @@ body {
   font-size: 1.414rem;
   font-weight: 400;
   color: #272a31;
-  line-height: 1.999rem;
+  line-height: 1.414em;
   max-width: 60ch;
   text-align: center;
 }
@@ -736,7 +788,7 @@ body {
   font-size: 1.414rem;
   font-weight: 400;
   color: #000;
-  line-height: 1.999rem;
+  line-height: 1.414em;
   max-width: 60ch;
   flex: 1 0 50%;
   text-align: center;
@@ -773,7 +825,7 @@ body {
   font-size: 1.414rem;
   font-weight: 400;
   color: #000;
-  line-height: 1.999rem;
+  line-height: 1.414em;
   max-width: 60ch;
   flex: 1 0 50%;
   text-align: center;
@@ -817,7 +869,7 @@ body {
   font-size: 2.827rem;
   font-weight: 700;
   color: #fff;
-  line-height: 1.999rem;
+  line-height: 1.414em;
   max-width: 60ch;
   margin-bottom: 0.5em;
   z-index: 2;
@@ -827,7 +879,7 @@ body {
   font-size: 1.414rem;
   font-weight: 700;
   color: #fff;
-  line-height: 1.999rem;
+  line-height: 1.414em;
   max-width: 60ch;
   z-index: 2;
 }

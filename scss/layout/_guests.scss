@@ -1,3 +1,4 @@
+@use '../vendors/include-media' as mq;
 @use '../abstracts/' as *;
 
 .guests {
@@ -12,10 +13,23 @@
     margin-bottom: $s-xxs-em;
   }
 
+  &__list {
+    @include mq.media('>=tablet') {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: $s-md;
+    }
+  }
+
   &__card {
     display: flex;
     align-items: center;
     margin-bottom: $s-xxl;
+    
+    @include mq.media('>=tablet') {
+      flex: 1 0 45%;
+    }
   }
 
   &__img-container {
@@ -58,5 +72,11 @@
 
   &__desc {
     @include font-styler($size: $s-md, $line-height: $s-lg);
+  }
+
+  &__accordion {
+    @include mq.media('>=tablet') {
+      display: none;
+    }
   }
 }
