@@ -1,5 +1,3 @@
 /node_modules
-lighthouse
-scss/vendors/_include-media.scss
-scss/vendors/_reset.scss
-scss/vendors
+/lighthouse
+/scss/vendors
