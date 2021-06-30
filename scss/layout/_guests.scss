@@ -26,7 +26,7 @@
     display: flex;
     align-items: center;
     margin-bottom: $s-xxl;
-    
+
     @include mq.media('>=tablet') {
       flex: 1 0 45%;
     }

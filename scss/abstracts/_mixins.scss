@@ -11,16 +11,16 @@
 }
 
 @mixin max-width {
-    width: 100%;
-    max-width: 96rem;
-    margin-left: auto;
-    margin-right: auto;
-    display: inherit;
-    flex-direction: inherit;
-    align-content: inherit;
-    justify-content: inherit;
-    align-items: inherit;
-    gap: inherit;
-    column-gap: inherit;
+  width: 100%;
+  max-width: 96rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: inherit;
+  flex-direction: inherit;
+  align-content: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  gap: inherit;
+  column-gap: inherit;
 }
-    
+

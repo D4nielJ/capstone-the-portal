@@ -15,18 +15,18 @@
   background-color: rgba(0, 0, 0, 0);
   transition:
     padding $speed1 ease-in-out,
-    background-color $speed1 ease-in-out,
-  ;
+    background-color $speed1 ease-in-out,;
 
   @include mq.media('>=tablet') {
     background-color: $light-color;
     padding: $s-lg-em $s-xl;
-    box-shadow: 0px 1px 5px 1px rgba(0,0,0,0.3);
+    box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.3);
   }
 
   &--scrolled {
     background-color: rgba($secondary-color, 1);
     padding: $s-lg-em $s-xl;
+
     @include mq.media('>=tablet') {
       background-color: $light-color;
       padding: $s-xs-em $s-xl;
@@ -39,14 +39,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;    
+    cursor: pointer;
     min-height: (0.3*3+0.5*2rem);
     z-index: inherit;
-    
+
     @include mq.media('>=tablet') {
       visibility: hidden;
     }
-
   }
 
   &__container {
@@ -65,11 +64,10 @@
     padding: $s-llg-em $s-xl;
     opacity: 0;
     visibility: hidden;
-    transition: 
+    transition:
       visibility 0s,
       opacity $speed1 ease-in-out,
-      width $speed1 ease-in-out,
-    ;
+      width $speed1 ease-in-out,;
 
     @include mq.media('>=tablet') {
       visibility: visible;
@@ -99,18 +97,20 @@
 
   &__item {
     padding: $s-md-em $s-lg;
+
     @include font-styler($size: $s-xl, $color: $primary-color-2d);
+
     cursor: pointer;
-    
+
     @include mq.media('>=tablet') {
       @include font-styler($size: $s-lg, $color: $primary-color-2d);
     }
 
     @include mq.media('>=desktop') {
       @include font-styler($size: 1.6rem, $color: $primary-color-2d);
+
       padding: $s-md-em $s-xxl;
     }
-
 
     &:hover {
       color: $primary-color;
@@ -129,6 +129,7 @@
         height: 0.2rem;
         background: $primary-color;
         margin-bottom: 0;
+
         @include mq.media('>=tablet') {
           content: none;
         }
@@ -150,6 +151,7 @@
 
   &__logo {
     order: 1;
+
     @include mq.media('>=tablet') {
       order: 0;
       display: flex;

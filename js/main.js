@@ -45,3 +45,6 @@ setInterval(() => {
         }
     }
 }, 300);
+
+// DYNAMIC SECTION FOR GUESTS
+
