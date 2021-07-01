@@ -312,7 +312,6 @@ body {
   position: absolute;
   content: "";
   background: linear-gradient(-10deg, white 45%, rgba(255, 255, 255, 0.5));
-  background-color: rgba(255, 255, 255, 0.8);
   min-height: 100%;
   width: 100%;
   z-index: -1;
@@ -522,11 +521,26 @@ body {
 .guests__card {
   display: flex;
   align-items: center;
-  margin-bottom: 2.827rem;
+  margin-bottom: 2.827em;
+  transition: visibility 1ms ease-in-out, opacity 200ms ease-in-out, height 200ms ease-in-out, margin 200ms ease-in-out;
 }
 @media (min-width: 768px) {
   .guests__card {
     flex: 1 0 45%;
+  }
+}
+.guests__card--collapse {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .guests__card--collapse {
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+    margin-bottom: 2.827em;
   }
 }
 .guests__img-container {

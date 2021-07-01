@@ -70,6 +70,16 @@ const guestsArr = [
     role: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, animi.',
     imgSrc: './assets/img/guests/guest-1.webp',
+  }, {
+    name: 'Unah Mház',
+    role: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School',
+    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, animi.',
+    imgSrc: './assets/img/guests/guest-1.webp',
+  }, {
+    name: 'Otrope Lao',
+    role: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School',
+    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, animi.',
+    imgSrc: './assets/img/guests/guest-1.webp',
   },
 ];
 
@@ -99,6 +109,44 @@ const appendGuests = () => {
   }
 };
 
-// Call
+// ACCORDION FOR GUESTS
+// Selectors
 
-window.onload = appendGuests;
+const moreButton = document.querySelector('.guests__accordion');
+
+// Functions
+
+const accordionGuests = () => {
+  const guestCards = Array.from(document.querySelectorAll('.guests__card'));
+  for (let i = 2; i < guestCards.length; i += 1) {
+    guestCards[i].classList.add('guests__card--collapse');
+  }
+};
+
+const openAccordion = () => {
+  const guestCards = Array.from(document.querySelectorAll('.guests__card'));
+  if (moreButton.classList.contains('guests__accordion--collapsed')) {
+    for (let i = 2; i < guestCards.length; i += 1) {
+      guestCards[i].classList.remove('guests__card--collapse');
+    }
+    moreButton.classList.remove('guests__accordion--collapsed');
+    moreButton.innerHTML = 'LESS<span class="fas fa-chevron-up">';
+  } else {
+    for (let i = 2; i < guestCards.length; i += 1) {
+      guestCards[i].classList.add('guests__card--collapse');
+    }
+    moreButton.classList.add('guests__accordion--collapsed');
+    moreButton.innerHTML = 'MORE<span class="fas fa-chevron-down">';
+  }
+};
+
+// Events for Accordion
+
+moreButton.addEventListener('click', openAccordion);
+
+// Events in window.onload event
+
+window.onload = () => {
+  appendGuests();
+  accordionGuests();
+};

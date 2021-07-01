@@ -25,10 +25,29 @@
   &__card {
     display: flex;
     align-items: center;
-    margin-bottom: $s-xxl;
+    margin-bottom: $s-xxl-em;
+    transition:
+      visibility 1ms ease-in-out,
+      opacity $speed1 ease-in-out,
+      height $speed1 ease-in-out,
+      margin $speed1 ease-in-out,;
 
     @include mq.media('>=tablet') {
       flex: 1 0 45%;
+    }
+
+    &--collapse {
+      visibility: hidden;
+      opacity: 0;
+      height: 0;
+      margin: 0;
+
+      @include mq.media('>=tablet') {
+        visibility: visible;
+        opacity: 1;
+        height: auto;
+        margin-bottom: $s-xxl-em;
+      }
     }
   }
 
