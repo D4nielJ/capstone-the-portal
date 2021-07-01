@@ -18,6 +18,8 @@ const toggleMenu = () => {
 
 const closeMenu = () => {
   navbarContainer.classList.remove('navbar__container--active');
+  navbarTogglerIcon.classList.toggle('toggler--active');
+  body.classList.toggle('body--overflow');
 };
 
 // Events

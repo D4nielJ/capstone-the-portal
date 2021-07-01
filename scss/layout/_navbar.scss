@@ -84,7 +84,7 @@
     justify-content: center;
     cursor: pointer;
     min-height: 1.9rem;
-    z-index: inherit;
+    z-index: 1;
 
     @include mq.media('>=tablet') {
       visibility: hidden;

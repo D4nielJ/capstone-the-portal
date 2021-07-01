@@ -202,7 +202,7 @@ body {
   justify-content: center;
   cursor: pointer;
   min-height: 1.9rem;
-  z-index: inherit;
+  z-index: 1;
 }
 @media (min-width: 768px) {
   .navbar__toggler-container {
