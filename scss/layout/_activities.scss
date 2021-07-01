@@ -3,7 +3,8 @@
 
 .activities {
   padding: $s-xxl-em $s-xl;
-  background: $secondary-color;
+  background: $secondary-color url(../assets/img/texture.png) 50% 50% no-repeat;
+  background-size: cover;
   color: $light-color;
   display: flex;
   flex-direction: column;
@@ -26,7 +27,7 @@
   &__card {
     width: 100%;
     margin: $s-md 0;
-    background: rgba($light-color, 0.2);
+    background: rgba($primary-color, 0.75);
     padding: $s-md-em $s-lg;
     display: flex;
     align-items: center;
@@ -53,7 +54,7 @@
   &__icon {
     display: block;
     font-size: $s-xxl;
-    color: $accent-lighter-color;
+    color: $secondary-color;
     margin-right: $s-md;
 
     @include mq.media('>=tablet') {
@@ -62,12 +63,26 @@
     }
   }
 
+  &__deco {
+    padding: 0;
+    margin: 0;
+    width: 6rem;
+    height: 0.2rem;
+    background: $light-color;
+    margin-bottom: $s-xs-em;
+    flex: 1 0 0.2rem;
+
+    @include mq.media('<tablet') {
+      display: none;
+    }
+  }
+
   &__subtitle {
     flex: 1 0 50%;
     display: flex;
     align-items: center;
 
-    @include font-styler($size: $s-lg, $color: $primary-color, $weight: 700);
+    @include font-styler($size: $s-lg, $color: $secondary-color, $weight: 700);
 
     margin-right: $s-xs;
     text-align: left;

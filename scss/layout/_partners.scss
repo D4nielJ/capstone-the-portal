@@ -1,7 +1,7 @@
 @use '../abstracts/' as *;
 
 .partners {
-  padding: $s-xxl-em $s-xl;
+  padding: $s-xl-em $s-xl $s-xxxl-em;
   background: $secondary-color;
   color: $light-color;
   display: flex;
@@ -17,12 +17,16 @@
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
-    gap: $s-lg-em 0;
+    gap: $s-xxl-em 0;
   }
 
   &__img-container {
     flex: 0 0 33.333%;
     padding: 0 $s-sm-em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.6;
   }
 
   &__img {

@@ -10,9 +10,27 @@
   background: url(../assets/img/yosemite-1.jpg) 50% 40% no-repeat;
   background-size: cover;
   position: relative;
-  z-index: -1;
+  z-index: -2;
 
-  &__title-bg {
+  &__title-bg-1 {
+    top: 0;
+    left: 0;
+    position: absolute;
+    content: '';
+    background: url(../assets/img/home/home-mobile.png) 50% 15% no-repeat;
+    background-size: contain;
+    min-height: 100%;
+    width: 100%;
+    opacity: 0.6;
+    z-index: -1;
+
+    @include mq.media('>=tablet') {
+      background: url(../assets/img/home/home-desktop.png) 50% 25% no-repeat;
+      background-size: contain;
+    }
+  }
+
+  &__title-bg-2 {
     top: 0;
     left: 0;
     position: absolute;
@@ -21,7 +39,7 @@
     background: linear-gradient(-10deg, rgba($light-color, 1) 45%, rgba($light-color, 0.5));
     min-height: 100%;
     width: 100%;
-    z-index: -1;
+    z-index: -2;
   }
 
   &__title {

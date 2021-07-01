@@ -25,13 +25,12 @@
     width: fit-content;
 
     & img {
-      max-height: $s-xxxl;
+      max-height: 10rem;
     }
   }
 
   &__desc {
     @include font-styler ($size: $s-md, $color: inherit);
-
     @include mq.media('>=tablet') {
       font-size: $s-lg;
     }

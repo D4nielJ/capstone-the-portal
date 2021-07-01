@@ -278,7 +278,7 @@ body {
 }
 @media (min-width: 768px) {
   .navbar__logo {
-    order: 0;
+    order: initial;
     display: flex;
     align-items: center;
     padding-left: 1.414rem;
@@ -304,9 +304,27 @@ body {
   background: url(../assets/img/yosemite-1.jpg) 50% 40% no-repeat;
   background-size: cover;
   position: relative;
+  z-index: -2;
+}
+.home__title-bg-1 {
+  top: 0;
+  left: 0;
+  position: absolute;
+  content: "";
+  background: url(../assets/img/home/home-mobile.png) 50% 15% no-repeat;
+  background-size: contain;
+  min-height: 100%;
+  width: 100%;
+  opacity: 0.6;
   z-index: -1;
 }
-.home__title-bg {
+@media (min-width: 768px) {
+  .home__title-bg-1 {
+    background: url(../assets/img/home/home-desktop.png) 50% 25% no-repeat;
+    background-size: contain;
+  }
+}
+.home__title-bg-2 {
   top: 0;
   left: 0;
   position: absolute;
@@ -314,7 +332,7 @@ body {
   background: linear-gradient(-10deg, white 45%, rgba(255, 255, 255, 0.5));
   min-height: 100%;
   width: 100%;
-  z-index: -1;
+  z-index: -2;
 }
 .home__title h2 {
   font-family: "lato", sans-serif;
@@ -390,7 +408,8 @@ body {
 
 .activities {
   padding: 2.827em 1.999rem;
-  background: #272a31;
+  background: #272a31 url(../assets/img/texture.png) 50% 50% no-repeat;
+  background-size: cover;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -411,7 +430,7 @@ body {
 .activities__card {
   width: 100%;
   margin: 1rem 0;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(27, 197, 75, 0.75);
   padding: 1em 1.414rem;
   display: flex;
   align-items: center;
@@ -438,13 +457,27 @@ body {
 .activities__icon {
   display: block;
   font-size: 2.827rem;
-  color: #f7f7f7;
+  color: #272a31;
   margin-right: 1rem;
 }
 @media (min-width: 768px) {
   .activities__icon {
     margin: 0;
     margin-bottom: 0.5em;
+  }
+}
+.activities__deco {
+  padding: 0;
+  margin: 0;
+  width: 6rem;
+  height: 0.2rem;
+  background: #fff;
+  margin-bottom: 0.5em;
+  flex: 1 0 0.2rem;
+}
+@media (max-width: 767px) {
+  .activities__deco {
+    display: none;
   }
 }
 .activities__subtitle {
@@ -454,7 +487,7 @@ body {
   font-family: "lato", sans-serif;
   font-size: 1.414rem;
   font-weight: 700;
-  color: #1bc54b;
+  color: #272a31;
   line-height: 1.414em;
   max-width: 60ch;
   margin-right: 0.5rem;
@@ -599,7 +632,7 @@ body {
 }
 
 .partners {
-  padding: 2.827em 1.999rem;
+  padding: 1.999em 1.999rem 3.998em;
   background: #272a31;
   color: #fff;
   display: flex;
@@ -614,11 +647,15 @@ body {
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
-  gap: 1.414em 0;
+  gap: 2.827em 0;
 }
 .partners__img-container {
   flex: 0 0 33.333%;
   padding: 0 0.707em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.6;
 }
 .partners__img {
   max-height: 6.5rem;
@@ -647,7 +684,7 @@ body {
   width: fit-content;
 }
 .footer__img img {
-  max-height: 3.998rem;
+  max-height: 10rem;
 }
 .footer__desc {
   font-family: "lato", sans-serif;
@@ -786,15 +823,24 @@ body {
     padding: 11em 1.999rem 5.653em;
   }
 }
-.about__title-bg {
+.about__title-bg-1 {
   top: 0;
   left: 0;
   position: absolute;
   content: "";
-  background-color: rgba(255, 255, 255, 0.8);
+  background: url(../assets/img/home/home-mobile.png) 50% 15% no-repeat;
+  background-size: cover;
   min-height: 100%;
   width: 100%;
+  opacity: 0.6;
   z-index: -1;
+  transform: scaleX(-1);
+}
+@media (min-width: 768px) {
+  .about__title-bg-1 {
+    background: url(../assets/img/home/home-desktop.png) 50% 25% no-repeat;
+    background-size: cover;
+  }
 }
 .about__title h2 {
   font-family: "lato", sans-serif;
@@ -951,13 +997,19 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #1bc54b url(../assets/img/yosemite-1.jpg) 50% 75% no-repeat;
-  background-size: 100%;
   padding: 3.998em 1rem;
   width: 100%;
   text-decoration: none;
   position: relative;
   transition: background-size 200ms ease-in-out;
+}
+.past__events--arg {
+  background: #1bc54b url(../../assets/img/past/argentina.jpg) 50% 5% no-repeat;
+  background-size: 100%;
+}
+.past__events--pol {
+  background: #1bc54b url(../../assets/img/past/poland.jpg) 50% 20% no-repeat;
+  background-size: 100%;
 }
 .past__events:hover, .past__events:active {
   background-size: 107%;

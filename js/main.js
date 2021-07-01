@@ -54,32 +54,32 @@ const guestsArr = [
     name: 'Yochai Benkler',
     role: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, animi.',
-    imgSrc: './assets/img/guests/guest-1.webp',
+    imgSrc: './assets/img/guests/g1.webp',
   }, {
     name: 'Jhon Doe',
     role: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, animi.',
-    imgSrc: './assets/img/guests/guest-1.webp',
+    imgSrc: './assets/img/guests/g2.jpg',
   }, {
     name: 'Annya Taylor Chester',
     role: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, animi.',
-    imgSrc: './assets/img/guests/guest-1.webp',
+    imgSrc: './assets/img/guests/g3.jpg',
   }, {
     name: 'Yin Lao',
     role: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, animi.',
-    imgSrc: './assets/img/guests/guest-1.webp',
+    imgSrc: './assets/img/guests/g4.jpg',
   }, {
     name: 'Unah Mház',
     role: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, animi.',
-    imgSrc: './assets/img/guests/guest-1.webp',
+    imgSrc: './assets/img/guests/g5.jpg',
   }, {
     name: 'Otrope Lao',
     role: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, animi.',
-    imgSrc: './assets/img/guests/guest-1.webp',
+    imgSrc: './assets/img/guests/g6.jpg',
   },
 ];
 
