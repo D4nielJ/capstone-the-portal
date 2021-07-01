@@ -52,32 +52,32 @@ setInterval(() => {
 const guestsArr = [
   {
     name: 'Yochai Benkler',
-    role: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School',
+    role: 'Berkman Professor of Entrepreneurial Camping Studies at Harvard Law School',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, animi.',
     imgSrc: './assets/img/guests/g1.webp',
   }, {
     name: 'Jhon Doe',
-    role: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School',
+    role: 'Experienced traveler of Africa with great mastery in knots',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, animi.',
     imgSrc: './assets/img/guests/g2.jpg',
   }, {
     name: 'Annya Taylor Chester',
-    role: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School',
+    role: 'Famous adventurer and PHD in biodiversity of the world',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, animi.',
     imgSrc: './assets/img/guests/g3.jpg',
   }, {
     name: 'Yin Lao',
-    role: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School',
+    role: 'Master in the arts of surviving against any adversity',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, animi.',
     imgSrc: './assets/img/guests/g4.jpg',
   }, {
     name: 'Unah Mház',
-    role: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School',
+    role: 'We needed to fill this place, she\'s not that special',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, animi.',
     imgSrc: './assets/img/guests/g5.jpg',
   }, {
     name: 'Otrope Lao',
-    role: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School',
+    role: 'The great and magnificent bald Lao',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, animi.',
     imgSrc: './assets/img/guests/g6.jpg',
   },
