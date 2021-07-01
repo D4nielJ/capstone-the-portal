@@ -19,7 +19,7 @@
   align-items: baseline;
   background: $secondary-color;
   z-index: 4;
-  
+
   &__container {
     max-width: 110rem;
   }
@@ -36,8 +36,9 @@
 
   & > div > span {
     @include font-styler($color: $light-color);
+
     margin-left: $s-xxxl;
-    
+
     &:hover {
       text-decoration: underline;
     }
