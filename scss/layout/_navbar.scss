@@ -5,12 +5,50 @@
   overflow: hidden;
 }
 
-.navbar {
+.sticky {
+  position: sticky;
+  top: 0;
   z-index: 3;
+}
+
+.navbar-black {
+  min-width: 100%;
+  padding: $s-xxs-em 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  background: $secondary-color;
+  z-index: 4;
+  
+  &__container {
+    max-width: 110rem;
+  }
+
+  &__media {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    margin-left: $s-xl;
+    color: $light-color;
+  }
+
+  & > div > span {
+    @include font-styler($color: $light-color);
+    margin-left: $s-xxxl;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.navbar {
   padding: $s-xl-em $s-xl;
   position: fixed;
   top: 0;
-  left: 0;
+  // left: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0);
   transition:
@@ -18,6 +56,10 @@
     background-color $speed1 ease-in-out,;
 
   @include mq.media('>=tablet') {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: initial;
     background-color: $light-color;
     padding: $s-lg-em $s-xl;
     box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.3);
