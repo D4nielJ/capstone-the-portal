@@ -1065,11 +1065,11 @@ body {
   transition: background-size 200ms ease-in-out;
 }
 .past__events--arg {
-  background: #1bc54b url(../../assets/img/past/argentina.jpg) 50% 5% no-repeat;
+  background: #1bc54b url(../assets/img/past/argentina.jpg) 50% 5% no-repeat;
   background-size: 100%;
 }
 .past__events--pol {
-  background: #1bc54b url(../../assets/img/past/poland.jpg) 50% 20% no-repeat;
+  background: #1bc54b url(../assets/img/past/poland.jpg) 50% 20% no-repeat;
   background-size: 100%;
 }
 .past__events:hover, .past__events:active {

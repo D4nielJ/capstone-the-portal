@@ -183,12 +183,12 @@
     transition: background-size $speed1 ease-in-out;
 
     &--arg {
-      background: $primary-color url(../../assets/img/past/argentina.jpg) 50% 5% no-repeat;
+      background: $primary-color url(../assets/img/past/argentina.jpg) 50% 5% no-repeat;
       background-size: 100%;
     }
 
     &--pol {
-      background: $primary-color url(../../assets/img/past/poland.jpg) 50% 20% no-repeat;
+      background: $primary-color url(../assets/img/past/poland.jpg) 50% 20% no-repeat;
       background-size: 100%;
     }
 
