@@ -79,7 +79,7 @@
   }
 
   &__date {
-    @include font-styler ($cocogoose, $s-xl, $color: $secondary-color);
+    @include font-styler ($cocogoose, $s-xl, 900, $color: $secondary-color);
 
     margin-bottom: $s-md;
 

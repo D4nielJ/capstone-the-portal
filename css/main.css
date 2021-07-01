@@ -79,12 +79,12 @@ select {
 }
 @font-face {
   font-family: "cocogoose";
-  src: url(../../assets/fonts/cocogoose/cocogoose-webfont.woff);
+  src: url(../assets/fonts/cocogoose/cocogoose-webfont.woff);
   font-weight: 900;
 }
 @font-face {
   font-family: "cocogoose";
-  src: url(../../assets/fonts/cocogoose/cocogoose-Italic.ttf);
+  src: url(../assets/fonts/cocogoose/cocogoose-Italic.ttf);
   font-style: italic;
 }
 html {
@@ -422,7 +422,7 @@ body {
 .home__date {
   font-family: "cocogoose", "lato", sans-serif;
   font-size: 1.999rem;
-  font-weight: 400;
+  font-weight: 900;
   color: #272a31;
   line-height: 1.414em;
   max-width: 60ch;
@@ -1065,15 +1065,15 @@ body {
   transition: background-size 200ms ease-in-out;
 }
 .past__events--arg {
-  background: #1bc54b url(../assets/img/past/argentina.jpg) 50% 5% no-repeat;
-  background-size: 100%;
+  background: #1bc54b url(../assets/img/past/argentina.jpg) 50% 50% no-repeat;
+  background-size: 110%;
 }
 .past__events--pol {
   background: #1bc54b url(../assets/img/past/poland.jpg) 50% 20% no-repeat;
-  background-size: 100%;
+  background-size: 110%;
 }
 .past__events:hover, .past__events:active {
-  background-size: 107%;
+  background-size: 117%;
 }
 .past__events::before {
   content: "";
@@ -1091,16 +1091,22 @@ body {
   color: #fff;
   line-height: 1.414em;
   max-width: 60ch;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.354em;
   z-index: 2;
+}
+@media (min-width: 768px) {
+  .past__year {
+    font-size: 3.998rem;
+  }
 }
 .past__event-desc {
   font-family: "lato", sans-serif;
-  font-size: 1.414rem;
+  font-size: 1.999rem;
   font-weight: 700;
   color: #fff;
   line-height: 1.414em;
   max-width: 60ch;
+  text-align: center;
   z-index: 2;
 }
 

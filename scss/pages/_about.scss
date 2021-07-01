@@ -183,18 +183,18 @@
     transition: background-size $speed1 ease-in-out;
 
     &--arg {
-      background: $primary-color url(../assets/img/past/argentina.jpg) 50% 5% no-repeat;
-      background-size: 100%;
+      background: $primary-color url(../assets/img/past/argentina.jpg) 50% 50% no-repeat;
+      background-size: 110%;
     }
 
     &--pol {
       background: $primary-color url(../assets/img/past/poland.jpg) 50% 20% no-repeat;
-      background-size: 100%;
+      background-size: 110%;
     }
 
     &:hover,
     &:active {
-      background-size: 107%;
+      background-size: 117%;
     }
 
     &::before {
@@ -211,13 +211,18 @@
   &__year {
     @include font-styler($color: $light-color, $size: $s-xxl, $weight: 700);
 
-    margin-bottom: $s-xs-em;
+    margin-bottom: $s-xxs-em;
     z-index: 2;
+
+    @include mq.media('>=tablet') {
+      font-size: $s-xxxl;
+    }
   }
 
   &__event-desc {
-    @include font-styler($color: $light-color, $weight: 700);
+    @include font-styler($size: $s-xl, $color: $light-color, $weight: 700);
 
+    text-align: center;
     z-index: 2;
   }
 }
