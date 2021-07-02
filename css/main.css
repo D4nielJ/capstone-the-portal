@@ -122,8 +122,10 @@ body {
   }
 }
 
-.body--overflow {
-  overflow: hidden;
+@media (max-width: 767px) {
+  .body--overflow {
+    overflow: hidden;
+  }
 }
 
 .sticky {
@@ -134,7 +136,7 @@ body {
 
 .navbar-black {
   min-width: 100%;
-  padding: 0.354em 0;
+  padding: 0.354em 2.827rem;
   display: flex;
   justify-content: flex-end;
   align-items: baseline;
@@ -465,25 +467,32 @@ body {
     gap: 1.414rem 0.5rem;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 1.999em !important;
   }
 }
 .activities__card {
+  position: relative;
+  top: 0;
   width: 100%;
   margin: 1rem 0;
   background: rgba(27, 197, 75, 0.75);
-  padding: 1em 1.414rem;
+  padding: 1.999em 1.414rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  cursor: pointer;
+  border: transparent 4px solid;
+  transition: border-color 200ms ease-in-out, top 200ms ease-out;
+}
+.activities__card:hover {
+  border: #fff 3px solid;
+  top: -0.707rem;
 }
 @media (min-width: 768px) {
   .activities__card {
     width: auto;
     max-width: 20ch;
-    min-height: 20rem;
     margin: 0;
-    flex-direction: column;
     text-align: center;
   }
 }
@@ -514,7 +523,7 @@ body {
   height: 0.2rem;
   background: #fff;
   margin-bottom: 0.5em;
-  flex: 1 0 0.2rem;
+  flex: 0 0 0.2rem;
 }
 @media (max-width: 767px) {
   .activities__deco {
@@ -522,25 +531,24 @@ body {
   }
 }
 .activities__subtitle {
-  flex: 1 0 50%;
+  flex: 1 0 55%;
   display: flex;
   align-items: center;
   font-family: "lato", sans-serif;
-  font-size: 1.414rem;
+  font-size: 1.999rem;
   font-weight: 700;
   color: #272a31;
   line-height: 1.414em;
   max-width: 60ch;
-  margin-right: 0.5rem;
+  margin-bottom: 0.5em;
   text-align: left;
 }
 @media (min-width: 768px) {
   .activities__subtitle {
+    flex: 1 0 20%;
     margin-right: 0;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.354em;
     flex-direction: column;
-    justify-content: space-around;
-    font-size: 1.999rem;
     text-align: center;
   }
 }
@@ -551,7 +559,9 @@ body {
   color: #fff;
   line-height: 1.414em;
   max-width: 60ch;
-  flex: 1 0 50%;
+  text-align: center;
+  max-width: 40ch;
+  flex: 1 0 30%;
 }
 @media (min-width: 768px) {
   .activities__button {
@@ -559,13 +569,19 @@ body {
   }
 }
 .activities__program {
-  text-transform: uppercase;
+  margin-top: 1.999em;
   font-family: "lato", sans-serif;
   font-size: 1.999rem;
   font-weight: 400;
   color: #fff;
   line-height: 1.414em;
   max-width: 60ch;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.activities__program:hover {
+  color: #1bc54b;
+  text-decoration: underline;
 }
 @media (max-width: 767px) {
   .activities__program {

@@ -2,7 +2,9 @@
 @use '../abstracts/' as *;
 
 .body--overflow {
-  overflow: hidden;
+  @include mq.media('<tablet') {
+    overflow: hidden;
+  }
 }
 
 .sticky {
@@ -13,7 +15,7 @@
 
 .navbar-black {
   min-width: 100%;
-  padding: $s-xxs-em 0;
+  padding: $s-xxs-em $s-xxl;
   display: flex;
   justify-content: flex-end;
   align-items: baseline;
