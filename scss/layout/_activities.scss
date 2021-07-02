@@ -1,0 +1,121 @@
+@use '../vendors/include-media' as mq;
+@use '../abstracts/' as *;
+
+.activities {
+  padding: $s-xxl-em $s-xl;
+  background: $secondary-color url(../assets/img/texture.png) 50% 50% no-repeat;
+  background-size: cover;
+  color: $light-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    margin-bottom: $s-xxs-em;
+  }
+
+  &__list {
+    @include mq.media('>=tablet') {
+      display: flex;
+      gap: $s-lg $s-xs;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: $s-xl-em !important;
+    }
+  }
+
+  &__card {
+    width: 100%;
+    margin: $s-md 0;
+    background: rgba($primary-color, 0.75);
+    padding: $s-md-em $s-lg;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include mq.media('>=tablet') {
+      width: auto;
+      max-width: 20ch;
+      min-height: 20rem;
+      margin: 0;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    &--last {
+      margin-bottom: $s-xl-em;
+
+      @include mq.media('>=tablet') {
+        margin: 0;
+      }
+    }
+  }
+
+  &__icon {
+    display: block;
+    font-size: $s-xxl;
+    color: $secondary-color;
+    margin-right: $s-md;
+
+    @include mq.media('>=tablet') {
+      margin: 0;
+      margin-bottom: $s-xs-em;
+    }
+  }
+
+  &__deco {
+    padding: 0;
+    margin: 0;
+    width: 6rem;
+    height: 0.2rem;
+    background: $light-color;
+    margin-bottom: $s-xs-em;
+    flex: 1 0 0.2rem;
+
+    @include mq.media('<tablet') {
+      display: none;
+    }
+  }
+
+  &__subtitle {
+    flex: 1 0 50%;
+    display: flex;
+    align-items: center;
+
+    @include font-styler($size: $s-lg, $color: $secondary-color, $weight: 700);
+
+    margin-right: $s-xs;
+    text-align: left;
+
+    @include mq.media('>=tablet') {
+      margin-right: 0;
+      margin-bottom: $s-xs-em;
+      flex-direction: column;
+      justify-content: space-around;
+      font-size: $s-xl;
+      text-align: center;
+    }
+  }
+
+  & p {
+    @include font-styler($color: $light-color, $size: $s-lg);
+
+    flex: 1 0 50%;
+  }
+
+  &__button {
+    @include mq.media('>=tablet') {
+      display: none;
+    }
+  }
+
+  &__program {
+    text-transform: uppercase;
+
+    @include font-styler($color: $light-color, $size: $s-xl);
+
+    @include mq.media('<tablet') {
+      display: none;
+    }
+  }
+}

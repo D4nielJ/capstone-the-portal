@@ -12,7 +12,7 @@
     "url": "git+ssh://git@github.com/D4nielJ/capstone-the-portal.git"
   },
   "author": "Daniel Jaramillo",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/D4nielJ/capstone-the-portal/issues"
   },
